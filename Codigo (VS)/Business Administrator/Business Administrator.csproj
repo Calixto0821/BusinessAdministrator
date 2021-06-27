@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E927F05-D415-4E57-A16D-8C1E9D2B4DD6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Business_Administrator</RootNamespace>
+    <AssemblyName>Business Administrator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet %28Functions Database%29.cs" />
+    <Compile Include="DB Business Administrator %28Tables%29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB Business Administrator %28Tables%29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateClient.Designer.cs">
+      <DependentUpon>FormCreate-UpdateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateDealer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateDealer.Designer.cs">
+      <DependentUpon>FormCreate-UpdateDealer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateEmployee.Designer.cs">
+      <DependentUpon>FormCreate-UpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateBrand.Designer.cs">
+      <DependentUpon>FormCreate-UpdateBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateLine.Designer.cs">
+      <DependentUpon>FormCreate-UpdateLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateProduct.Designer.cs">
+      <DependentUpon>FormCreate-UpdateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateService.Designer.cs">
+      <DependentUpon>FormCreate-UpdateService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableClients.Designer.cs">
+      <DependentUpon>FormTableClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableDealers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableDealers.Designer.cs">
+      <DependentUpon>FormTableDealers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableEmployees.Designer.cs">
+      <DependentUpon>FormTableEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableLinesAndBrands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableLinesAndBrands.Designer.cs">
+      <DependentUpon>FormTableLinesAndBrands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableProducts.Designer.cs">
+      <DependentUpon>FormTableProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Tables and Queries\FormTableServices.Designer.cs">
+      <DependentUpon>FormTableServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ownFunctions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validate.cs" />
+    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateClient.resx">
+      <DependentUpon>FormCreate-UpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateDealer.resx">
+      <DependentUpon>FormCreate-UpdateDealer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateEmployee.resx">
+      <DependentUpon>FormCreate-UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateBrand.resx">
+      <DependentUpon>FormCreate-UpdateBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateLine.resx">
+      <DependentUpon>FormCreate-UpdateLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateProduct.resx">
+      <DependentUpon>FormCreate-UpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateService.resx">
+      <DependentUpon>FormCreate-UpdateService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Tables and Queries\FormTableClients.resx">
+      <DependentUpon>FormTableClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Tables and Queries\FormTableDealers.resx">
+      <DependentUpon>FormTableDealers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Tables and Queries\FormTableEmployees.resx">
+      <DependentUpon>FormTableEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Tables and Queries\FormTableLinesAndBrands.resx">
+      <DependentUpon>FormTableLinesAndBrands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Tables and Queries\FormTableProducts.resx">
+      <DependentUpon>FormTableProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Tables and Queries\FormTableServices.resx">
+      <DependentUpon>FormTableServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DB Business Administrator %28Tables%29.xsc">
+      <DependentUpon>DB Business Administrator %28Tables%29.xsd</DependentUpon>
+    </None>
+    <None Include="DB Business Administrator %28Tables%29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB Business Administrator %28Tables%29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB Business Administrator %28Tables%29.xss">
+      <DependentUpon>DB Business Administrator %28Tables%29.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
