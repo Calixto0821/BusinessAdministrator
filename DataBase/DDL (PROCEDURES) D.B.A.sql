@@ -19,6 +19,7 @@ WHERE
 GO
 
 
+
 --DISPLAY
 CREATE PROCEDURE displayDataEmployees 
 AS
@@ -31,7 +32,7 @@ U.email AS 'EMAIL',
 U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS as U
 INNER JOIN EMPLOYEES AS E ON U.document = E.document_user
-WHERE U.user_type = 3
+WHERE U.user_type = 3 AND E.status = 1
 GO
 
 CREATE PROCEDURE displayDataClients
@@ -45,7 +46,7 @@ U.email AS 'EMAIL',
 U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS AS U
 INNER JOIN CLIENTS AS C ON U.document = C.document_user
-WHERE U.user_type = 2
+WHERE U.user_type = 2 AND C.status = 1
 GO
 
 CREATE PROCEDURE displayDataDealers
@@ -59,6 +60,7 @@ D.contact_email AS 'EMAIL',
 D.web AS 'WEB',
 D.address AS 'ADDRESS'
 FROM DEALERS AS D
+WHERE D.status = 1
 GO
 
 CREATE PROCEDURE displayDataServices
@@ -71,6 +73,7 @@ S.barcode AS 'BARCODE',
 S.price AS 'PRICE',
 S.description AS 'DESCRIPTION'
 FROM SERVICES AS S
+WHERE S.status = 1
 GO
 
 CREATE PROCEDURE displayDataProducts
@@ -84,6 +87,7 @@ P.price AS 'PRICE',
 P.stock AS 'STOCK',
 P.description AS 'DESCRIPTION'
 FROM PRODUCTS AS P
+WHERE P.status = 1
 GO
 
 CREATE PROCEDURE displayDataLines
@@ -92,6 +96,7 @@ SELECT
 L.id AS 'ID',
 L.name AS 'NAME'
 FROM LINES AS L
+WHERE L.status = 1
 GO
 
 CREATE PROCEDURE displayDataBrands
@@ -100,6 +105,12 @@ SELECT
 B.id AS 'ID',
 B.name AS 'NAME'
 FROM BRANDS AS B
+WHERE B.status = 1
+GO
+
+CREATE PROCEDURE deleteClient @Document VARCHAR(15)
+AS
+UPDATE CLIENTS SET status = 0 WHERE document_user = @Document
 GO
 
 CREATE PROCEDURE displayDataDeletedClients
@@ -113,7 +124,12 @@ U.email AS 'EMAIL',
 U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS AS U
 INNER JOIN CLIENTS AS C ON U.document = C.document_user
-WHERE U.user_type = 4
+WHERE C.status = 0
+GO
+
+CREATE PROCEDURE deleteEmployee @Document VARCHAR(15)
+AS
+UPDATE EMPLOYEES SET status = 0 WHERE document_user = @Document
 GO
 
 CREATE PROCEDURE displayDataDeletedEmployees 
@@ -127,5 +143,5 @@ U.email AS 'EMAIL',
 U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS as U
 INNER JOIN EMPLOYEES AS E ON U.document = E.document_user
-WHERE U.user_type = 5
+WHERE E.status = 0
 GO
