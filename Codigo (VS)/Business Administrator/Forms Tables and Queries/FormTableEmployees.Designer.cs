@@ -38,6 +38,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
+            this.TitleEmployees = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,8 +51,6 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
             this.dataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewEmployees.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEmployees.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewEmployees.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
@@ -78,7 +77,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewEmployees.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewEmployees.EnableHeadersVisualStyles = false;
             this.dataGridViewEmployees.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
-            this.dataGridViewEmployees.Location = new System.Drawing.Point(22, 12);
+            this.dataGridViewEmployees.Location = new System.Drawing.Point(12, 54);
             this.dataGridViewEmployees.Name = "dataGridViewEmployees";
             this.dataGridViewEmployees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -99,7 +98,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             // buttonDelete
             // 
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonDelete.Location = new System.Drawing.Point(943, 392);
+            this.buttonDelete.Location = new System.Drawing.Point(933, 434);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(129, 46);
             this.buttonDelete.TabIndex = 6;
@@ -110,7 +109,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             // buttonEdit
             // 
             this.buttonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonEdit.Location = new System.Drawing.Point(943, 340);
+            this.buttonEdit.Location = new System.Drawing.Point(933, 382);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(129, 46);
             this.buttonEdit.TabIndex = 5;
@@ -118,11 +117,23 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
+            // TitleEmployees
+            // 
+            this.TitleEmployees.AutoSize = true;
+            this.TitleEmployees.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.TitleEmployees.Location = new System.Drawing.Point(12, 18);
+            this.TitleEmployees.Name = "TitleEmployees";
+            this.TitleEmployees.Size = new System.Drawing.Size(151, 33);
+            this.TitleEmployees.TabIndex = 7;
+            this.TitleEmployees.Text = "EMPLEADOS";
+            // 
             // FormTableEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 450);
+            this.ClientSize = new System.Drawing.Size(1081, 492);
+            this.Controls.Add(this.TitleEmployees);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.dataGridViewEmployees);
@@ -131,6 +142,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.Load += new System.EventHandler(this.FormTableEmployees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -139,5 +151,6 @@ namespace Business_Administrator.Forms_Tables_and_Queries
         public DataGridView dataGridViewEmployees;
         private Button buttonDelete;
         private Button buttonEdit;
+        private Label TitleEmployees;
     }
 }

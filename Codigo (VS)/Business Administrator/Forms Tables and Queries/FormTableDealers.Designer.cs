@@ -34,6 +34,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewDealers = new System.Windows.Forms.DataGridView();
+            this.TitleBrands = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDealers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,8 +47,6 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
             this.dataGridViewDealers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewDealers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDealers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewDealers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewDealers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
@@ -74,7 +73,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewDealers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewDealers.EnableHeadersVisualStyles = false;
             this.dataGridViewDealers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
-            this.dataGridViewDealers.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewDealers.Location = new System.Drawing.Point(12, 45);
             this.dataGridViewDealers.Name = "dataGridViewDealers";
             this.dataGridViewDealers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -92,22 +91,36 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewDealers.Size = new System.Drawing.Size(776, 426);
             this.dataGridViewDealers.TabIndex = 2;
             // 
+            // TitleBrands
+            // 
+            this.TitleBrands.AutoSize = true;
+            this.TitleBrands.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleBrands.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.TitleBrands.Location = new System.Drawing.Point(12, 9);
+            this.TitleBrands.Name = "TitleBrands";
+            this.TitleBrands.Size = new System.Drawing.Size(177, 33);
+            this.TitleBrands.TabIndex = 3;
+            this.TitleBrands.Text = "PROVEEDORES";
+            // 
             // FormTableDealers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 488);
+            this.Controls.Add(this.TitleBrands);
             this.Controls.Add(this.dataGridViewDealers);
             this.Name = "FormTableDealers";
             this.Text = "FormTableDealers";
             this.Load += new System.EventHandler(this.FormTableDealers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDealers)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         public System.Windows.Forms.DataGridView dataGridViewDealers;
+        private System.Windows.Forms.Label TitleBrands;
     }
 }

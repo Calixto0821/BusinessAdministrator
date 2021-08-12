@@ -31,15 +31,12 @@ namespace Business_Administrator
             {
                 if (Functions.checkLenghtTexBox(textBoxName,2))
                 {
-                    if (Functions.checkLenghtEspecificTexBox(textBoxCellphone,10))
-                    {
                         if (Functions.checkValidEmail(textBoxEmail.Text)||textBoxEmail.Text == "NO TIENE")
                         {
                             Dealer DEALER = new Dealer(textBoxName.Text,textBoxCellphone.Text,textBoxPhone.Text,textBoxAddress.Text,textBoxWeb.Text,textBoxEmail.Text);
                             DEALER.insert();
                             this.Hide();
                         } else MessageBox.Show("Ingresa un correo electronico valido, por favor");
-                    } else MessageBox.Show("El campo de Celular debe tener 10 digitos");
                 } else MessageBox.Show("El campo Nombre debe tener 2 caracteres minimo");
             } else MessageBox.Show("POR FAVOR, LLENA TODOS LOS CAMPOS OBLIGATORIOS");
         }

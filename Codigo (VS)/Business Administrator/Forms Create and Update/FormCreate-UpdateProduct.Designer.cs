@@ -32,7 +32,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxMinimumStock = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonInsert_Update = new System.Windows.Forms.Button();
             this.textBoxStock = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxBarcode = new System.Windows.Forms.TextBox();
@@ -62,8 +62,8 @@ namespace Business_Administrator.Forms_Create
             this.textBoxMinimumStock.Location = new System.Drawing.Point(92, 206);
             this.textBoxMinimumStock.Name = "textBoxMinimumStock";
             this.textBoxMinimumStock.Size = new System.Drawing.Size(134, 20);
-            this.textBoxMinimumStock.TabIndex = 50;
-            this.textBoxMinimumStock.Tag = "6";
+            this.textBoxMinimumStock.TabIndex = 6;
+            this.textBoxMinimumStock.Tag = "";
             this.textBoxMinimumStock.Text = "0";
             this.textBoxMinimumStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
@@ -86,19 +86,19 @@ namespace Business_Administrator.Forms_Create
             this.labelTitle.Text = "CREAR PRODUCTO";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // buttonAdd
+            // buttonInsert_Update
             // 
-            this.buttonAdd.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonAdd.FlatAppearance.BorderSize = 0;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Location = new System.Drawing.Point(92, 344);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(134, 23);
-            this.buttonAdd.TabIndex = 51;
-            this.buttonAdd.Tag = "11";
-            this.buttonAdd.Text = "Agregar";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonInsert_Update.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonInsert_Update.FlatAppearance.BorderSize = 0;
+            this.buttonInsert_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInsert_Update.Location = new System.Drawing.Point(92, 344);
+            this.buttonInsert_Update.Name = "buttonInsert_Update";
+            this.buttonInsert_Update.Size = new System.Drawing.Size(134, 23);
+            this.buttonInsert_Update.TabIndex = 11;
+            this.buttonInsert_Update.Tag = "";
+            this.buttonInsert_Update.Text = "Agregar/Editar";
+            this.buttonInsert_Update.UseVisualStyleBackColor = false;
+            this.buttonInsert_Update.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textBoxStock
             // 
@@ -109,8 +109,8 @@ namespace Business_Administrator.Forms_Create
             this.textBoxStock.Location = new System.Drawing.Point(92, 170);
             this.textBoxStock.Name = "textBoxStock";
             this.textBoxStock.Size = new System.Drawing.Size(134, 20);
-            this.textBoxStock.TabIndex = 49;
-            this.textBoxStock.Tag = "5";
+            this.textBoxStock.TabIndex = 5;
+            this.textBoxStock.Tag = "";
             this.textBoxStock.Text = "0";
             this.textBoxStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
@@ -130,7 +130,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxBarcode.Location = new System.Drawing.Point(92, 100);
             this.textBoxBarcode.Name = "textBoxBarcode";
             this.textBoxBarcode.Size = new System.Drawing.Size(134, 20);
-            this.textBoxBarcode.TabIndex = 47;
+            this.textBoxBarcode.TabIndex = 3;
             this.textBoxBarcode.Tag = "3";
             // 
             // label4
@@ -147,7 +147,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxName.Location = new System.Drawing.Point(92, 65);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(134, 20);
-            this.textBoxName.TabIndex = 46;
+            this.textBoxName.TabIndex = 2;
             this.textBoxName.Tag = "2";
             // 
             // label3
@@ -168,7 +168,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxPrice.Location = new System.Drawing.Point(92, 144);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(134, 20);
-            this.textBoxPrice.TabIndex = 48;
+            this.textBoxPrice.TabIndex = 4;
             this.textBoxPrice.Tag = "4";
             this.textBoxPrice.Text = "0";
             this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
@@ -187,7 +187,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxReference.Location = new System.Drawing.Point(92, 39);
             this.textBoxReference.Name = "textBoxReference";
             this.textBoxReference.Size = new System.Drawing.Size(134, 20);
-            this.textBoxReference.TabIndex = 45;
+            this.textBoxReference.TabIndex = 1;
             this.textBoxReference.Tag = "1";
             // 
             // label1
@@ -224,8 +224,8 @@ namespace Business_Administrator.Forms_Create
             this.textBoxDescription.Location = new System.Drawing.Point(92, 237);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(134, 20);
-            this.textBoxDescription.TabIndex = 59;
-            this.textBoxDescription.Tag = "7";
+            this.textBoxDescription.TabIndex = 7;
+            this.textBoxDescription.Tag = "";
             // 
             // label9
             // 
@@ -252,8 +252,8 @@ namespace Business_Administrator.Forms_Create
             this.comboBoxDealer.Location = new System.Drawing.Point(92, 263);
             this.comboBoxDealer.Name = "comboBoxDealer";
             this.comboBoxDealer.Size = new System.Drawing.Size(134, 21);
-            this.comboBoxDealer.TabIndex = 67;
-            this.comboBoxDealer.Tag = "8";
+            this.comboBoxDealer.TabIndex = 8;
+            this.comboBoxDealer.Tag = "";
             // 
             // comboBoxLine
             // 
@@ -273,9 +273,9 @@ namespace Business_Administrator.Forms_Create
             this.comboBoxBrand.Size = new System.Drawing.Size(134, 21);
             this.comboBoxBrand.TabIndex = 10;
             // 
-            // FormCreateProduct
+            // FormCreate_UpdateProduct
             // 
-            this.AcceptButton = this.buttonAdd;
+            this.AcceptButton = this.buttonInsert_Update;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(249, 381);
@@ -290,7 +290,7 @@ namespace Business_Administrator.Forms_Create
             this.Controls.Add(this.textBoxMinimumStock);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.labelTitle);
-            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.buttonInsert_Update);
             this.Controls.Add(this.textBoxStock);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxBarcode);
@@ -302,7 +302,7 @@ namespace Business_Administrator.Forms_Create
             this.Controls.Add(this.textBoxReference);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "FormCreateProduct";
+            this.Name = "FormCreate_UpdateProduct";
             this.Text = "Create Product";
             this.Load += new System.EventHandler(this.FormCreateProduct_Load);
             this.ResumeLayout(false);
@@ -315,7 +315,7 @@ namespace Business_Administrator.Forms_Create
         private System.Windows.Forms.TextBox textBoxMinimumStock;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonInsert_Update;
         private System.Windows.Forms.TextBox textBoxStock;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxBarcode;

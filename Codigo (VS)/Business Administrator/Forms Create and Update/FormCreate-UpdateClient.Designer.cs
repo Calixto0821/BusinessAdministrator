@@ -60,7 +60,7 @@
             this.textBoxFirstName.Location = new System.Drawing.Point(90, 41);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxFirstName.TabIndex = 3;
+            this.textBoxFirstName.TabIndex = 1;
             this.textBoxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateChars_KeyPress);
             // 
             // textBoxLastName
@@ -68,7 +68,7 @@
             this.textBoxLastName.Location = new System.Drawing.Point(90, 67);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLastName.TabIndex = 5;
+            this.textBoxLastName.TabIndex = 2;
             this.textBoxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateChars_KeyPress);
             // 
             // labelLastName
@@ -85,7 +85,7 @@
             this.textBoxCellphone.Location = new System.Drawing.Point(90, 93);
             this.textBoxCellphone.Name = "textBoxCellphone";
             this.textBoxCellphone.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCellphone.TabIndex = 7;
+            this.textBoxCellphone.TabIndex = 3;
             this.textBoxCellphone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
             // labelCellphone
@@ -102,7 +102,7 @@
             this.textBoxDocument.Location = new System.Drawing.Point(90, 119);
             this.textBoxDocument.Name = "textBoxDocument";
             this.textBoxDocument.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDocument.TabIndex = 9;
+            this.textBoxDocument.TabIndex = 4;
             this.textBoxDocument.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
             // labelDocument
@@ -119,7 +119,7 @@
             this.textBoxEmail.Location = new System.Drawing.Point(90, 145);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEmail.TabIndex = 11;
+            this.textBoxEmail.TabIndex = 5;
             // 
             // labelEmail
             // 
@@ -138,8 +138,8 @@
             this.buttonInsert_Update.Location = new System.Drawing.Point(90, 223);
             this.buttonInsert_Update.Name = "buttonInsert_Update";
             this.buttonInsert_Update.Size = new System.Drawing.Size(100, 23);
-            this.buttonInsert_Update.TabIndex = 12;
-            this.buttonInsert_Update.Text = "Agregar/Edit";
+            this.buttonInsert_Update.TabIndex = 8;
+            this.buttonInsert_Update.Text = "Agregar/Editar";
             this.buttonInsert_Update.UseVisualStyleBackColor = false;
             this.buttonInsert_Update.Click += new System.EventHandler(this.buttonInsert_Update_Click);
             // 
@@ -149,7 +149,7 @@
             this.labelTitle.Location = new System.Drawing.Point(40, 9);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(150, 20);
-            this.labelTitle.TabIndex = 13;
+            this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "CLIENTE";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -158,7 +158,7 @@
             this.textBoxDebt.Location = new System.Drawing.Point(90, 197);
             this.textBoxDebt.Name = "textBoxDebt";
             this.textBoxDebt.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDebt.TabIndex = 17;
+            this.textBoxDebt.TabIndex = 7;
             this.textBoxDebt.Text = "0";
             this.textBoxDebt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
@@ -176,7 +176,7 @@
             this.textBoxBalance.Location = new System.Drawing.Point(90, 171);
             this.textBoxBalance.Name = "textBoxBalance";
             this.textBoxBalance.Size = new System.Drawing.Size(100, 20);
-            this.textBoxBalance.TabIndex = 15;
+            this.textBoxBalance.TabIndex = 6;
             this.textBoxBalance.Text = "0";
             this.textBoxBalance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 

@@ -32,7 +32,7 @@ namespace Business_Administrator.Forms_Create
             this.labelTitle = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonInsert_Update = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -50,7 +50,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxName.Location = new System.Drawing.Point(81, 32);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(134, 20);
-            this.textBoxName.TabIndex = 43;
+            this.textBoxName.TabIndex = 1;
             // 
             // label1
             // 
@@ -61,31 +61,31 @@ namespace Business_Administrator.Forms_Create
             this.label1.TabIndex = 45;
             this.label1.Text = "Nombre:";
             // 
-            // buttonAdd
+            // buttonInsert_Update
             // 
-            this.buttonAdd.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonAdd.FlatAppearance.BorderSize = 0;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Location = new System.Drawing.Point(81, 58);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(134, 23);
-            this.buttonAdd.TabIndex = 48;
-            this.buttonAdd.Text = "Agregar";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonInsert_Update.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonInsert_Update.FlatAppearance.BorderSize = 0;
+            this.buttonInsert_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInsert_Update.Location = new System.Drawing.Point(81, 58);
+            this.buttonInsert_Update.Name = "buttonInsert_Update";
+            this.buttonInsert_Update.Size = new System.Drawing.Size(134, 23);
+            this.buttonInsert_Update.TabIndex = 2;
+            this.buttonInsert_Update.Text = "Agregar/Editar";
+            this.buttonInsert_Update.UseVisualStyleBackColor = false;
+            this.buttonInsert_Update.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // FormCreateLine
+            // FormCreate_UpdateLine
             // 
-            this.AcceptButton = this.buttonAdd;
+            this.AcceptButton = this.buttonInsert_Update;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(246, 93);
-            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.buttonInsert_Update);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "FormCreateLine";
+            this.Name = "FormCreate_UpdateLine";
             this.Text = "Create Linea";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -97,6 +97,6 @@ namespace Business_Administrator.Forms_Create
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonInsert_Update;
     }
 }

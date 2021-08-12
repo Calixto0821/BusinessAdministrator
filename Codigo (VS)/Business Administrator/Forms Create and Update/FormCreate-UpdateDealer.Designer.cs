@@ -30,7 +30,7 @@ namespace Business_Administrator
         private void InitializeComponent()
         {
             this.labelTitle = new System.Windows.Forms.Label();
-            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonInsert_Update = new System.Windows.Forms.Button();
             this.textBoxWeb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
@@ -55,18 +55,18 @@ namespace Business_Administrator
             this.labelTitle.Text = "CREAR PROVEEDOR";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // buttonAdd
+            // buttonInsert_Update
             // 
-            this.buttonAdd.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonAdd.FlatAppearance.BorderSize = 0;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Location = new System.Drawing.Point(84, 195);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(134, 23);
-            this.buttonAdd.TabIndex = 7;
-            this.buttonAdd.Text = "Agregar";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonInsert_Update.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonInsert_Update.FlatAppearance.BorderSize = 0;
+            this.buttonInsert_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInsert_Update.Location = new System.Drawing.Point(84, 195);
+            this.buttonInsert_Update.Name = "buttonInsert_Update";
+            this.buttonInsert_Update.Size = new System.Drawing.Size(134, 23);
+            this.buttonInsert_Update.TabIndex = 7;
+            this.buttonInsert_Update.Text = "Agregar/Editar";
+            this.buttonInsert_Update.UseVisualStyleBackColor = false;
+            this.buttonInsert_Update.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textBoxWeb
             // 
@@ -180,16 +180,16 @@ namespace Business_Administrator
             this.label6.TabIndex = 44;
             this.label6.Text = "Email:";
             // 
-            // FormCreateDealer
+            // FormCreate_UpdateDealer
             // 
-            this.AcceptButton = this.buttonAdd;
+            this.AcceptButton = this.buttonInsert_Update;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(242, 235);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.labelTitle);
-            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.buttonInsert_Update);
             this.Controls.Add(this.textBoxWeb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxPhone);
@@ -201,7 +201,7 @@ namespace Business_Administrator
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "FormCreateDealer";
+            this.Name = "FormCreate_UpdateDealer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCreateDealer";
             this.ResumeLayout(false);
@@ -212,7 +212,7 @@ namespace Business_Administrator
         #endregion
 
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonInsert_Update;
         private System.Windows.Forms.TextBox textBoxWeb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxPhone;
