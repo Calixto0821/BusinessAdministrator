@@ -54,6 +54,7 @@
             // 
             this.labelNameEmployee.AutoSize = true;
             this.labelNameEmployee.Font = new System.Drawing.Font("Roboto Condensed", 14F, System.Drawing.FontStyle.Bold);
+            this.labelNameEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.labelNameEmployee.Location = new System.Drawing.Point(12, 9);
             this.labelNameEmployee.Name = "labelNameEmployee";
             this.labelNameEmployee.Size = new System.Drawing.Size(146, 23);
@@ -64,6 +65,7 @@
             // 
             this.labelDocumentEmployee.AutoSize = true;
             this.labelDocumentEmployee.Font = new System.Drawing.Font("Roboto Condensed", 14F, System.Drawing.FontStyle.Bold);
+            this.labelDocumentEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.labelDocumentEmployee.Location = new System.Drawing.Point(12, 32);
             this.labelDocumentEmployee.Name = "labelDocumentEmployee";
             this.labelDocumentEmployee.Size = new System.Drawing.Size(172, 23);
@@ -77,7 +79,7 @@
             this.buttonCreateEmployee.FlatAppearance.BorderSize = 0;
             this.buttonCreateEmployee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonCreateEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateEmployee.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateEmployee.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreateEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonCreateEmployee.Location = new System.Drawing.Point(16, 70);
             this.buttonCreateEmployee.Name = "buttonCreateEmployee";
@@ -93,7 +95,7 @@
             this.buttonCreateClient.FlatAppearance.BorderSize = 0;
             this.buttonCreateClient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonCreateClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateClient.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateClient.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreateClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonCreateClient.Location = new System.Drawing.Point(16, 99);
             this.buttonCreateClient.Name = "buttonCreateClient";
@@ -109,7 +111,7 @@
             this.buttonCreateDealer.FlatAppearance.BorderSize = 0;
             this.buttonCreateDealer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonCreateDealer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateDealer.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateDealer.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreateDealer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonCreateDealer.Location = new System.Drawing.Point(16, 128);
             this.buttonCreateDealer.Name = "buttonCreateDealer";
@@ -125,7 +127,7 @@
             this.buttonCreateLine.FlatAppearance.BorderSize = 0;
             this.buttonCreateLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonCreateLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateLine.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateLine.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreateLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonCreateLine.Location = new System.Drawing.Point(16, 157);
             this.buttonCreateLine.Name = "buttonCreateLine";
@@ -141,7 +143,7 @@
             this.buttonCreateBrand.FlatAppearance.BorderSize = 0;
             this.buttonCreateBrand.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonCreateBrand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateBrand.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateBrand.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreateBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonCreateBrand.Location = new System.Drawing.Point(16, 186);
             this.buttonCreateBrand.Name = "buttonCreateBrand";
@@ -157,7 +159,7 @@
             this.buttonCreateProduct.FlatAppearance.BorderSize = 0;
             this.buttonCreateProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonCreateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateProduct.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateProduct.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreateProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonCreateProduct.Location = new System.Drawing.Point(16, 215);
             this.buttonCreateProduct.Name = "buttonCreateProduct";
@@ -173,7 +175,7 @@
             this.buttonCreateService.FlatAppearance.BorderSize = 0;
             this.buttonCreateService.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonCreateService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateService.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateService.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreateService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonCreateService.Location = new System.Drawing.Point(16, 244);
             this.buttonCreateService.Name = "buttonCreateService";
@@ -189,7 +191,7 @@
             this.buttonSeeServices.FlatAppearance.BorderSize = 0;
             this.buttonSeeServices.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonSeeServices.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSeeServices.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSeeServices.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeeServices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonSeeServices.Location = new System.Drawing.Point(176, 244);
             this.buttonSeeServices.Name = "buttonSeeServices";
@@ -205,7 +207,7 @@
             this.buttonSeeProducts.FlatAppearance.BorderSize = 0;
             this.buttonSeeProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonSeeProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSeeProducts.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSeeProducts.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeeProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonSeeProducts.Location = new System.Drawing.Point(176, 215);
             this.buttonSeeProducts.Name = "buttonSeeProducts";
@@ -221,7 +223,7 @@
             this.buttonSeeLinesAndBrands.FlatAppearance.BorderSize = 0;
             this.buttonSeeLinesAndBrands.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonSeeLinesAndBrands.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSeeLinesAndBrands.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSeeLinesAndBrands.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeeLinesAndBrands.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonSeeLinesAndBrands.Location = new System.Drawing.Point(176, 157);
             this.buttonSeeLinesAndBrands.Name = "buttonSeeLinesAndBrands";
@@ -237,7 +239,7 @@
             this.buttonSeeDealers.FlatAppearance.BorderSize = 0;
             this.buttonSeeDealers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonSeeDealers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSeeDealers.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSeeDealers.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeeDealers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonSeeDealers.Location = new System.Drawing.Point(176, 128);
             this.buttonSeeDealers.Name = "buttonSeeDealers";
@@ -253,7 +255,7 @@
             this.buttonSeeClients.FlatAppearance.BorderSize = 0;
             this.buttonSeeClients.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonSeeClients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSeeClients.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSeeClients.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeeClients.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonSeeClients.Location = new System.Drawing.Point(176, 99);
             this.buttonSeeClients.Name = "buttonSeeClients";
@@ -269,7 +271,7 @@
             this.buttonSeeEmployees.FlatAppearance.BorderSize = 0;
             this.buttonSeeEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonSeeEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSeeEmployees.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSeeEmployees.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSeeEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonSeeEmployees.Location = new System.Drawing.Point(176, 70);
             this.buttonSeeEmployees.Name = "buttonSeeEmployees";
@@ -285,7 +287,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.button1.Location = new System.Drawing.Point(176, 273);
             this.button1.Name = "button1";
@@ -300,7 +302,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.button2.Location = new System.Drawing.Point(16, 273);
             this.button2.Name = "button2";
@@ -315,7 +317,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.button3.Location = new System.Drawing.Point(176, 302);
             this.button3.Name = "button3";
@@ -330,7 +332,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.button4.Location = new System.Drawing.Point(16, 302);
             this.button4.Name = "button4";
@@ -361,7 +363,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(345, 389);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.button3);

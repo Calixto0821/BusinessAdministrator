@@ -92,5 +92,10 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             }
             else MessageBox.Show("Selecciona solamente un registro, por favor");
         }
+
+        private void buttonCloseApplication_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

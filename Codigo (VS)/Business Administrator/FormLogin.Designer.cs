@@ -40,7 +40,7 @@
             // 
             // textBoxUser
             // 
-            this.textBoxUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.textBoxUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.textBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxUser.Font = new System.Drawing.Font("Roboto Condensed", 15F);
             this.textBoxUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
@@ -52,7 +52,7 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPassword.Font = new System.Drawing.Font("Roboto Condensed", 15F);
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
@@ -73,8 +73,7 @@
             this.buttonLogin.Location = new System.Drawing.Point(18, 230);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(235, 37);
-            this.buttonLogin.TabIndex = 0;
-            this.buttonLogin.TabStop = false;
+            this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Ingresar";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
@@ -89,8 +88,7 @@
             this.buttonCreateAdministrator.Location = new System.Drawing.Point(18, 271);
             this.buttonCreateAdministrator.Name = "buttonCreateAdministrator";
             this.buttonCreateAdministrator.Size = new System.Drawing.Size(235, 37);
-            this.buttonCreateAdministrator.TabIndex = 0;
-            this.buttonCreateAdministrator.TabStop = false;
+            this.buttonCreateAdministrator.TabIndex = 3;
             this.buttonCreateAdministrator.Text = "Crear Administrador";
             this.buttonCreateAdministrator.UseVisualStyleBackColor = false;
             this.buttonCreateAdministrator.Visible = false;
@@ -104,7 +102,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 55);
             this.label1.TabIndex = 4;
-            this.label1.Text = "INICIAR SESION";
+            this.label1.Text = "INICIAR SESIÓN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -139,7 +137,8 @@
             this.buttonCloseApplication.Location = new System.Drawing.Point(239, 12);
             this.buttonCloseApplication.Name = "buttonCloseApplication";
             this.buttonCloseApplication.Size = new System.Drawing.Size(25, 25);
-            this.buttonCloseApplication.TabIndex = 7;
+            this.buttonCloseApplication.TabIndex = 0;
+            this.buttonCloseApplication.TabStop = false;
             this.buttonCloseApplication.Text = "X";
             this.buttonCloseApplication.UseVisualStyleBackColor = false;
             this.buttonCloseApplication.Click += new System.EventHandler(this.buttonCloseApplication_Click);
@@ -148,7 +147,7 @@
             // 
             this.AcceptButton = this.buttonLogin;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(276, 328);
             this.Controls.Add(this.buttonCloseApplication);
             this.Controls.Add(this.label3);
