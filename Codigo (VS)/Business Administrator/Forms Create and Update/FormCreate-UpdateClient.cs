@@ -38,8 +38,6 @@ namespace Business_Administrator
             if (insertMood) labelTitle.Text = "REGISTRAR USUARIO";
             else if (updateMood) labelTitle.Text = "ACTUALIZAR USUARIO";
             else Console.WriteLine("Error mood Form");
-            textBoxDebt.Text = "0";
-            textBoxBalance.Text = "0";
         }
 
         private void buttonInsert_Update_Click(object sender, EventArgs e)

@@ -95,7 +95,18 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void buttonCloseApplication_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
+        }
+
+        private void buttonBalance_Click(object sender, EventArgs e)
+        {
+            FormClientBalance formClientBalance = new FormClientBalance();
+            string currentUserID = dataGridViewClients.CurrentRow.Cells["ID USER"].Value.ToString().Trim();
+            string procedure = "getDataClientBalance @UserID = "+currentUserID;
+            DataTable dataTable = connection.execProcedure(procedure);
+            formClientBalance.balance = Convert.ToDouble(dataTable.Rows[0]["BALANCE"].ToString().Trim());
+            formClientBalance.debt = Convert.ToDouble(dataTable.Rows[0]["DEBT"].ToString().Trim());
+            formClientBalance.ShowDialog();
         }
     }
 }

@@ -20,7 +20,7 @@ namespace Business_Administrator
         public void openConnectionDB()
         {
             try{connectionSQL.Open();}
-            catch (SqlException Error){Console.WriteLine("Error! Could not open connection with the database\n"+Error);}            
+            catch (SqlException Error){Console.WriteLine("Error! Could not open connection with the database\n"+Error.Message);}            
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Business_Administrator
         public void closeConnectionDB()
         {
             try{connectionSQL.Close();}
-            catch (SqlException Error){Console.WriteLine("Error! Could not close connection with the database\n" + Error);}
+            catch (SqlException Error){Console.WriteLine("Error! Could not close connection with the database\n" + Error.Message);}
         }
 
 
@@ -246,6 +246,36 @@ namespace Business_Administrator
             
         }
 
+        /// <summary>
+        ///<para>This method return as a DataTable the procedure data</para>
+        ///<para>Recives as parameter a string</para>
+        /// </summary>
+        /// <param name="nameProcedure"></param>
+        /// <returns></returns>
+        public DataTable execProcedure(string nameProcedure)
+        {
+            try
+            {
+                openConnectionDB();
+                SqlDataAdapter command = new SqlDataAdapter("EXEC "+nameProcedure, connectionSQL);
+                DataTable dataTable = new DataTable();
+                command.Fill(dataTable);
+                Console.WriteLine("Method querySelect execute successfully");
+                return dataTable;
+            }
+            catch (SqlException ErrorSQL)
+            {
+
+                MessageBox.Show("Error en el metodo querySelect");
+                Console.Write("Method querySelect no execute successfully => Error: " + ErrorSQL);
+                return null;
+            }
+            finally
+            {
+                closeConnectionDB();
+            }
+        }
+
     }
 
     public class Sesion
@@ -292,6 +322,8 @@ namespace Business_Administrator
             this.debt = debt;
             this.user_type = 2;
         }
+
+
 
         ConnectionDB connection = new ConnectionDB();
 

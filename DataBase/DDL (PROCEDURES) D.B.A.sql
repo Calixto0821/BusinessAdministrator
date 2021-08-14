@@ -43,7 +43,9 @@ C.id AS 'ID CLIENT',
 (U.first_name +' '+ U.last_name) AS 'FULL NAME',
 U.document AS 'DOCUMENT',
 U.email AS 'EMAIL',
-U.cellphone_number AS 'CELLPHONE NUMBER'
+U.cellphone_number AS 'CELLPHONE NUMBER',
+C.balance AS 'SALDO',
+C.debt AS 'DEUDA'
 FROM USERS AS U
 INNER JOIN CLIENTS AS C ON U.document = C.document_user
 WHERE U.user_type = 2 AND C.status = 1
@@ -144,4 +146,15 @@ U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS as U
 INNER JOIN EMPLOYEES AS E ON U.document = E.document_user
 WHERE E.status = 0
+GO
+
+CREATE PROCEDURE getDataClientBalance @UserID INT
+AS
+SELECT
+U.id AS 'ID USER',
+C.balance AS 'BALANCE',
+C.debt AS 'DEBT'
+FROM CLIENTS AS C
+INNER JOIN USERS AS U ON U.document = C.document_user
+WHERE C.status = 1 AND U.id = @UserID
 GO
