@@ -28,185 +28,228 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.labelDebt = new System.Windows.Forms.Label();
+            this.textBoxUser = new System.Windows.Forms.TextBox();
+            this.labelBalance = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.buttonInsert_Update = new System.Windows.Forms.Button();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
             this.textBoxDocument = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelDocument = new System.Windows.Forms.Label();
             this.textBoxCellphone = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelCellphone = new System.Windows.Forms.Label();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelLastName = new System.Windows.Forms.Label();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxUser = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPassword.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.textBoxPassword.Location = new System.Drawing.Point(103, 214);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(172, 20);
+            this.textBoxPassword.TabIndex = 27;
+            // 
+            // labelDebt
+            // 
+            this.labelDebt.AutoSize = true;
+            this.labelDebt.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.labelDebt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.labelDebt.Location = new System.Drawing.Point(15, 214);
+            this.labelDebt.Name = "labelDebt";
+            this.labelDebt.Size = new System.Drawing.Size(82, 19);
+            this.labelDebt.TabIndex = 32;
+            this.labelDebt.Text = "Contrase;a:";
+            // 
+            // textBoxUser
+            // 
+            this.textBoxUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.textBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUser.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.textBoxUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.textBoxUser.Location = new System.Drawing.Point(103, 188);
+            this.textBoxUser.Name = "textBoxUser";
+            this.textBoxUser.Size = new System.Drawing.Size(172, 20);
+            this.textBoxUser.TabIndex = 25;
+            // 
+            // labelBalance
+            // 
+            this.labelBalance.AutoSize = true;
+            this.labelBalance.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.labelBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.labelBalance.Location = new System.Drawing.Point(35, 188);
+            this.labelBalance.Name = "labelBalance";
+            this.labelBalance.Size = new System.Drawing.Size(62, 19);
+            this.labelBalance.TabIndex = 31;
+            this.labelBalance.Text = "Usuario:";
             // 
             // labelTitle
             // 
-            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold);
+            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.labelTitle.Location = new System.Drawing.Point(12, 9);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(225, 20);
-            this.labelTitle.TabIndex = 25;
+            this.labelTitle.Size = new System.Drawing.Size(263, 35);
+            this.labelTitle.TabIndex = 17;
             this.labelTitle.Text = "EMPLEADO";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonInsert_Update
             // 
-            this.buttonInsert_Update.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonInsert_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.buttonInsert_Update.FlatAppearance.BorderSize = 0;
+            this.buttonInsert_Update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonInsert_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInsert_Update.Location = new System.Drawing.Point(84, 222);
+            this.buttonInsert_Update.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.buttonInsert_Update.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.buttonInsert_Update.Location = new System.Drawing.Point(104, 240);
             this.buttonInsert_Update.Name = "buttonInsert_Update";
-            this.buttonInsert_Update.Size = new System.Drawing.Size(134, 23);
-            this.buttonInsert_Update.TabIndex = 8;
-            this.buttonInsert_Update.Text = "Agregar/Actualizar";
+            this.buttonInsert_Update.Size = new System.Drawing.Size(172, 33);
+            this.buttonInsert_Update.TabIndex = 28;
+            this.buttonInsert_Update.Text = "Agregar/Editar";
             this.buttonInsert_Update.UseVisualStyleBackColor = false;
             this.buttonInsert_Update.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(84, 143);
+            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEmail.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.textBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.textBoxEmail.Location = new System.Drawing.Point(103, 162);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(134, 20);
-            this.textBoxEmail.TabIndex = 5;
+            this.textBoxEmail.Size = new System.Drawing.Size(172, 20);
+            this.textBoxEmail.TabIndex = 24;
             // 
-            // label5
+            // labelEmail
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 146);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Email:";
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.labelEmail.Location = new System.Drawing.Point(48, 162);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(49, 19);
+            this.labelEmail.TabIndex = 30;
+            this.labelEmail.Text = "Email:";
             // 
             // textBoxDocument
             // 
-            this.textBoxDocument.Location = new System.Drawing.Point(85, 91);
+            this.textBoxDocument.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.textBoxDocument.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDocument.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.textBoxDocument.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.textBoxDocument.Location = new System.Drawing.Point(103, 136);
             this.textBoxDocument.Name = "textBoxDocument";
-            this.textBoxDocument.Size = new System.Drawing.Size(134, 20);
-            this.textBoxDocument.TabIndex = 3;
-            this.textBoxDocument.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
+            this.textBoxDocument.Size = new System.Drawing.Size(172, 20);
+            this.textBoxDocument.TabIndex = 22;
             // 
-            // label4
+            // labelDocument
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Documento:";
+            this.labelDocument.AutoSize = true;
+            this.labelDocument.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.labelDocument.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.labelDocument.Location = new System.Drawing.Point(11, 136);
+            this.labelDocument.Name = "labelDocument";
+            this.labelDocument.Size = new System.Drawing.Size(86, 19);
+            this.labelDocument.TabIndex = 29;
+            this.labelDocument.Text = "Documento:";
             // 
             // textBoxCellphone
             // 
-            this.textBoxCellphone.Location = new System.Drawing.Point(84, 117);
+            this.textBoxCellphone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.textBoxCellphone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCellphone.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.textBoxCellphone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.textBoxCellphone.Location = new System.Drawing.Point(103, 110);
             this.textBoxCellphone.Name = "textBoxCellphone";
-            this.textBoxCellphone.Size = new System.Drawing.Size(134, 20);
-            this.textBoxCellphone.TabIndex = 4;
-            this.textBoxCellphone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
+            this.textBoxCellphone.Size = new System.Drawing.Size(172, 20);
+            this.textBoxCellphone.TabIndex = 21;
             // 
-            // label3
+            // labelCellphone
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 120);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Celular:";
+            this.labelCellphone.AutoSize = true;
+            this.labelCellphone.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.labelCellphone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.labelCellphone.Location = new System.Drawing.Point(38, 110);
+            this.labelCellphone.Name = "labelCellphone";
+            this.labelCellphone.Size = new System.Drawing.Size(59, 19);
+            this.labelCellphone.TabIndex = 26;
+            this.labelCellphone.Text = "Celular:";
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(84, 65);
+            this.textBoxLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.textBoxLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxLastName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.textBoxLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.textBoxLastName.Location = new System.Drawing.Point(103, 84);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(134, 20);
-            this.textBoxLastName.TabIndex = 2;
-            this.textBoxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateChars_KeyPress);
+            this.textBoxLastName.Size = new System.Drawing.Size(172, 20);
+            this.textBoxLastName.TabIndex = 19;
             // 
-            // label2
+            // labelLastName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Apellidos:";
+            this.labelLastName.AutoSize = true;
+            this.labelLastName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.labelLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.labelLastName.Location = new System.Drawing.Point(24, 84);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(73, 19);
+            this.labelLastName.TabIndex = 23;
+            this.labelLastName.Text = "Apellidos:";
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(84, 39);
+            this.textBoxFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.textBoxFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxFirstName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.textBoxFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.textBoxFirstName.Location = new System.Drawing.Point(103, 58);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(134, 20);
-            this.textBoxFirstName.TabIndex = 1;
-            this.textBoxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateChars_KeyPress);
+            this.textBoxFirstName.Size = new System.Drawing.Size(172, 20);
+            this.textBoxFirstName.TabIndex = 18;
             // 
-            // label1
+            // labelName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Nombre(s):";
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Location = new System.Drawing.Point(84, 195);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(134, 20);
-            this.textBoxPassword.TabIndex = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 198);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 13);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Contraseña:";
-            // 
-            // textBoxUser
-            // 
-            this.textBoxUser.Location = new System.Drawing.Point(84, 169);
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(134, 20);
-            this.textBoxUser.TabIndex = 6;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(32, 172);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 13);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "Usuario:";
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.labelName.Location = new System.Drawing.Point(16, 58);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(81, 19);
+            this.labelName.TabIndex = 20;
+            this.labelName.Text = "Nombre(s):";
             // 
             // FormCreate_UpdateEmployee
             // 
             this.AcceptButton = this.buttonInsert_Update;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 269);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.ClientSize = new System.Drawing.Size(287, 285);
             this.Controls.Add(this.textBoxPassword);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelDebt);
             this.Controls.Add(this.textBoxUser);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.labelBalance);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.buttonInsert_Update);
             this.Controls.Add(this.textBoxEmail);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.textBoxDocument);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelDocument);
             this.Controls.Add(this.textBoxCellphone);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelCellphone);
             this.Controls.Add(this.textBoxLastName);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.textBoxFirstName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelName);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCreate_UpdateEmployee";
@@ -218,21 +261,22 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox textBoxEmail;
-        public System.Windows.Forms.TextBox textBoxDocument;
-        public System.Windows.Forms.TextBox textBoxCellphone;
-        public System.Windows.Forms.TextBox textBoxLastName;
-        public System.Windows.Forms.TextBox textBoxFirstName;
+
         public System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.Label labelDebt;
         public System.Windows.Forms.TextBox textBoxUser;
-        public System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Label labelBalance;
+        private System.Windows.Forms.Label labelTitle;
         public System.Windows.Forms.Button buttonInsert_Update;
+        public System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.Label labelEmail;
+        public System.Windows.Forms.TextBox textBoxDocument;
+        private System.Windows.Forms.Label labelDocument;
+        public System.Windows.Forms.TextBox textBoxCellphone;
+        private System.Windows.Forms.Label labelCellphone;
+        public System.Windows.Forms.TextBox textBoxLastName;
+        private System.Windows.Forms.Label labelLastName;
+        public System.Windows.Forms.TextBox textBoxFirstName;
+        private System.Windows.Forms.Label labelName;
     }
 }

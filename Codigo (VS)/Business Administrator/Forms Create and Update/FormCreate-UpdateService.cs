@@ -39,10 +39,16 @@ namespace Business_Administrator.Forms_Create
                         service = new Service(textBoxReference.Text, textBoxName.Text, textBoxBarcode.Text, Convert.ToDouble(textBoxPrice.Text),textBoxDescription.Text);
                     }     
                     service.insert();
+                    this.DialogResult = DialogResult.OK;
                 }
                 else MessageBox.Show("Ingresa un precio Valido por favor");
             }
             else MessageBox.Show("Completa todos los campos por favor");
+        }
+
+        private void FormCreate_UpdateService_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

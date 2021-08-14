@@ -46,6 +46,7 @@ namespace Business_Administrator.Forms_Create
                         id_dealer, id_brand, id_line,
                         int.Parse(textBoxStock.Text), int.Parse(textBoxMinimumStock.Text), textBoxDescription.Text);
                     product.insert();
+                    this.DialogResult = DialogResult.OK;
                 } else MessageBox.Show("Ingresa un precio Valido por favor");     
             }else MessageBox.Show("Completa todos los campos por favor");          
         }

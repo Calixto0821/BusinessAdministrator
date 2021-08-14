@@ -60,6 +60,7 @@ namespace Business_Administrator
                     }
                     else Console.WriteLine("Both moods are false");
                     Functions.emptyFields(fieldsForm);
+                    this.DialogResult = DialogResult.OK;
                     this.Dispose();
                 }
                 else MessageBox.Show("Ingresa un correo electronico valido, por favor");

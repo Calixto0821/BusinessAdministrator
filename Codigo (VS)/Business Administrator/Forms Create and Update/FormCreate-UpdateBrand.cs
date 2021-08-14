@@ -25,6 +25,7 @@ namespace Business_Administrator.Forms_Create
             {
                 Brand brand = new Brand(textBoxName.Text);
                 brand.insert();
+                this.DialogResult = DialogResult.OK;
                 this.Hide();
 
             } else MessageBox.Show("LLENA EL CAMPO CON MINIMO 2 CARACTERES");

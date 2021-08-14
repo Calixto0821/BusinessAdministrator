@@ -35,6 +35,7 @@ namespace Business_Administrator
                         {
                             Dealer DEALER = new Dealer(textBoxName.Text,textBoxCellphone.Text,textBoxPhone.Text,textBoxAddress.Text,textBoxWeb.Text,textBoxEmail.Text);
                             DEALER.insert();
+                        this.DialogResult = DialogResult.OK;
                             this.Hide();
                         } else MessageBox.Show("Ingresa un correo electronico valido, por favor");
                 } else MessageBox.Show("El campo Nombre debe tener 2 caracteres minimo");

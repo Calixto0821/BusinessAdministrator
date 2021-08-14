@@ -51,7 +51,7 @@
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelName.Location = new System.Drawing.Point(17, 58);
+            this.labelName.Location = new System.Drawing.Point(16, 58);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(81, 19);
             this.labelName.TabIndex = 2;
@@ -63,7 +63,7 @@
             this.textBoxFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxFirstName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxFirstName.Location = new System.Drawing.Point(104, 58);
+            this.textBoxFirstName.Location = new System.Drawing.Point(103, 58);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(172, 20);
             this.textBoxFirstName.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.textBoxLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxLastName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxLastName.Location = new System.Drawing.Point(104, 84);
+            this.textBoxLastName.Location = new System.Drawing.Point(103, 84);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(172, 20);
             this.textBoxLastName.TabIndex = 2;
@@ -86,7 +86,7 @@
             this.labelLastName.AutoSize = true;
             this.labelLastName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelLastName.Location = new System.Drawing.Point(25, 84);
+            this.labelLastName.Location = new System.Drawing.Point(24, 84);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(73, 19);
             this.labelLastName.TabIndex = 4;
@@ -98,7 +98,7 @@
             this.textBoxCellphone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCellphone.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxCellphone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxCellphone.Location = new System.Drawing.Point(104, 110);
+            this.textBoxCellphone.Location = new System.Drawing.Point(103, 110);
             this.textBoxCellphone.Name = "textBoxCellphone";
             this.textBoxCellphone.Size = new System.Drawing.Size(172, 20);
             this.textBoxCellphone.TabIndex = 3;
@@ -109,7 +109,7 @@
             this.labelCellphone.AutoSize = true;
             this.labelCellphone.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelCellphone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelCellphone.Location = new System.Drawing.Point(39, 110);
+            this.labelCellphone.Location = new System.Drawing.Point(38, 110);
             this.labelCellphone.Name = "labelCellphone";
             this.labelCellphone.Size = new System.Drawing.Size(59, 19);
             this.labelCellphone.TabIndex = 6;
@@ -121,7 +121,7 @@
             this.textBoxDocument.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDocument.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxDocument.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxDocument.Location = new System.Drawing.Point(104, 136);
+            this.textBoxDocument.Location = new System.Drawing.Point(103, 136);
             this.textBoxDocument.Name = "textBoxDocument";
             this.textBoxDocument.Size = new System.Drawing.Size(172, 20);
             this.textBoxDocument.TabIndex = 4;
@@ -132,7 +132,7 @@
             this.labelDocument.AutoSize = true;
             this.labelDocument.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelDocument.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelDocument.Location = new System.Drawing.Point(12, 136);
+            this.labelDocument.Location = new System.Drawing.Point(11, 136);
             this.labelDocument.Name = "labelDocument";
             this.labelDocument.Size = new System.Drawing.Size(86, 19);
             this.labelDocument.TabIndex = 8;
@@ -144,7 +144,7 @@
             this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxEmail.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxEmail.Location = new System.Drawing.Point(104, 162);
+            this.textBoxEmail.Location = new System.Drawing.Point(103, 162);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(172, 20);
             this.textBoxEmail.TabIndex = 5;
@@ -154,7 +154,7 @@
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelEmail.Location = new System.Drawing.Point(49, 162);
+            this.labelEmail.Location = new System.Drawing.Point(48, 162);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(49, 19);
             this.labelEmail.TabIndex = 10;
@@ -192,7 +192,7 @@
             this.labelBalance.AutoSize = true;
             this.labelBalance.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelBalance.Location = new System.Drawing.Point(49, 188);
+            this.labelBalance.Location = new System.Drawing.Point(48, 188);
             this.labelBalance.Name = "labelBalance";
             this.labelBalance.Size = new System.Drawing.Size(49, 19);
             this.labelBalance.TabIndex = 14;
@@ -204,7 +204,7 @@
             this.textBoxBalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBalance.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxBalance.Location = new System.Drawing.Point(104, 188);
+            this.textBoxBalance.Location = new System.Drawing.Point(103, 188);
             this.textBoxBalance.Name = "textBoxBalance";
             this.textBoxBalance.Size = new System.Drawing.Size(172, 20);
             this.textBoxBalance.TabIndex = 6;
@@ -216,7 +216,7 @@
             this.labelDebt.AutoSize = true;
             this.labelDebt.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelDebt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelDebt.Location = new System.Drawing.Point(44, 214);
+            this.labelDebt.Location = new System.Drawing.Point(43, 214);
             this.labelDebt.Name = "labelDebt";
             this.labelDebt.Size = new System.Drawing.Size(54, 19);
             this.labelDebt.TabIndex = 16;
@@ -228,7 +228,7 @@
             this.textBoxDebt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDebt.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxDebt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxDebt.Location = new System.Drawing.Point(104, 214);
+            this.textBoxDebt.Location = new System.Drawing.Point(103, 214);
             this.textBoxDebt.Name = "textBoxDebt";
             this.textBoxDebt.Size = new System.Drawing.Size(172, 20);
             this.textBoxDebt.TabIndex = 7;

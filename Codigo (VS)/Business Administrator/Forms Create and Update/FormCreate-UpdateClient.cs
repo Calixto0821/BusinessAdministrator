@@ -60,6 +60,7 @@ namespace Business_Administrator
                         if (messageQuestionUpdate == DialogResult.Yes) CLIENT.update(textBoxDocument.Text);
                     }else Console.WriteLine("Both moods are false");
                     Functions.emptyFields(fieldsForm);
+                    this.DialogResult = DialogResult.OK;
                     this.Dispose();
                 }else MessageBox.Show("Ingresa un correo electronico valido, por favor");
             } else MessageBox.Show("POR FAVOR, LLENA TODOS LOS CAMPOS OBLIGATORIOS");
