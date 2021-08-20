@@ -85,8 +85,13 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     "\nDesea eliminar de forma definitiva?", "Eliminar Cliente", MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
                 if (warningMessage == DialogResult.Yes)
                 {
-                    Clients clients = new Clients(documentClient);
-                    clients.delete();
+                    DialogResult dialogResultValidation = new DialogResult();
+                    FormUserValidation formUserValidation = new FormUserValidation();
+                    dialogResultValidation = formUserValidation.ShowDialog();
+                    if (dialogResultValidation == DialogResult.OK){
+                        Clients clients = new Clients(documentClient);
+                        clients.delete();
+                    }                       
                     dataUpload();
                 }             
             }

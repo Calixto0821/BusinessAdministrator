@@ -110,8 +110,14 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     "\nDesea eliminar de forma definitiva?", "Eliminar Empleado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (warningMessage == DialogResult.Yes)
                 {
-                    Employee employee = new Employee(documentEmployee);
-                    employee.delete();
+                    DialogResult dialogResultValidation = new DialogResult();
+                    FormUserValidation formUserValidation = new FormUserValidation();
+                    dialogResultValidation = formUserValidation.ShowDialog();
+                    if (dialogResultValidation == DialogResult.OK)
+                    {
+                        Employee employee = new Employee(documentEmployee);
+                        employee.delete();
+                    }     
                     dataUpload();
                 }
             }

@@ -191,14 +191,14 @@ namespace Business_Administrator
                 else
                 {
                     Console.WriteLine("FAILED VALIDATION => The password was wrong");
-                    MessageBox.Show( "Contraseña incorrecta","Error en validacion", MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
-                    return DialogResult.Cancel;
+                    MessageBox.Show( "Contraseña incorrecta","Error en validacion", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    return DialogResult.No;
                 }
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                return DialogResult.Cancel;
+                return DialogResult.No;
             }
             finally
             {
