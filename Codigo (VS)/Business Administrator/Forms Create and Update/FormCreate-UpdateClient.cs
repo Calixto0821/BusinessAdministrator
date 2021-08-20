@@ -52,13 +52,25 @@ namespace Business_Administrator
                     if (insertMood)
                     {
                         DialogResult messageQuestionInsert = MessageBox.Show("Desea registrar un nuevo usuario?", "Registrar Usuario Nuevo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (messageQuestionInsert == DialogResult.Yes) CLIENT.insert();
+                        if (messageQuestionInsert == DialogResult.Yes) {
+                            DialogResult dialogResultValidation = new DialogResult();
+                            FormUserValidation formUserValidation = new FormUserValidation();
+                            dialogResultValidation = formUserValidation.ShowDialog();
+                            if(dialogResultValidation == DialogResult.OK) CLIENT.insert();
+                        }
+                        
                     }
                     else if (updateMood)
                     {
                         DialogResult messageQuestionUpdate = MessageBox.Show("Desea actualizar los datos del usuario?", "Editar Usuario " + textBoxDocument.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (messageQuestionUpdate == DialogResult.Yes) CLIENT.update(textBoxDocument.Text);
-                    }else Console.WriteLine("Both moods are false");
+                        if (messageQuestionUpdate == DialogResult.Yes) {
+                            DialogResult dialogResultValidation = new DialogResult();
+                            FormUserValidation formUserValidation = new FormUserValidation();
+                            dialogResultValidation = formUserValidation.ShowDialog();
+                            if (dialogResultValidation == DialogResult.OK) CLIENT.update(textBoxDocument.Text);
+                        }
+                    }
+                    else Console.WriteLine("Both moods are false");
                     Functions.emptyFields(fieldsForm);
                     this.DialogResult = DialogResult.OK;
                     this.Dispose();

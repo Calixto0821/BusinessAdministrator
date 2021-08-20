@@ -75,7 +75,6 @@ namespace Business_Administrator
             createClient.updateMood = false;
             createClient.buttonInsert_Update.Text = "Agregar";
             createClient.Show();
-            this.Hide();
         }
 
         private void buttonCreateDealer_Click(object sender, EventArgs e)

@@ -44,12 +44,22 @@ namespace Business_Administrator
                     if (insertMood)
                     {
                         DialogResult messageQuestionInsertEmployee = MessageBox.Show("Desea registrar un nuevo empleado?", "Registrar Empleado Nuevo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (messageQuestionInsertEmployee == DialogResult.Yes) EMPLOYEE.insert();
+                        if (messageQuestionInsertEmployee == DialogResult.Yes) {
+                            DialogResult dialogResultValidation = new DialogResult();
+                            FormUserValidation formUserValidation = new FormUserValidation();
+                            dialogResultValidation = formUserValidation.ShowDialog();
+                            if (dialogResultValidation == DialogResult.OK) EMPLOYEE.insert();
+                        } 
                     }
                     else if (updateMood)
                     {
                         DialogResult messageQuestionUpdate = MessageBox.Show("Desea actualizar los datos del empleado?", "Editar Empleado " + textBoxDocument.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (messageQuestionUpdate == DialogResult.Yes) EMPLOYEE.update(textBoxDocument.Text);
+                        if (messageQuestionUpdate == DialogResult.Yes) {
+                            DialogResult dialogResultValidation = new DialogResult();
+                            FormUserValidation formUserValidation = new FormUserValidation();
+                            dialogResultValidation = formUserValidation.ShowDialog();
+                            if (dialogResultValidation == DialogResult.OK) EMPLOYEE.update(textBoxDocument.Text);
+                        }  
                     }
                     else if (administratorMood)
                     {

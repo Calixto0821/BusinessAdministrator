@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Windows;
 
 namespace Business_Administrator
 {
@@ -166,6 +167,45 @@ namespace Business_Administrator
                 closeConnectionDB();
             }
         }
+
+
+        public DialogResult ValidateUser(string password)
+        {
+            try
+            {
+                openConnectionDB();
+
+                SqlCommand command_Select = new SqlCommand("EXEC User_Login @User  = '" + Globals.documentCurrentUser + "', @Password = '" + password + "';",connectionSQL);
+                SqlDataAdapter da = new SqlDataAdapter(command_Select);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count == 1)
+                {
+                    Console.WriteLine("USER VALIDATED =>" +
+                        " User: " + dt.Rows[0]["Full name"].ToString().Trim() +
+                        "| Document: " + dt.Rows[0]["document"].ToString().Trim() +
+                        "| Nickname: " + dt.Rows[0]["nickname"].ToString().Trim() +
+                        "| Password: " + dt.Rows[0]["password"].ToString().Trim());
+                    return DialogResult.OK;
+                }
+                else
+                {
+                    Console.WriteLine("FAILED VALIDATION => The password was wrong");
+                    MessageBox.Show( "Contraseña incorrecta","Error en validacion", MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
+                    return DialogResult.Cancel;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return DialogResult.Cancel;
+            }
+            finally
+            {
+                closeConnectionDB();
+            }
+        }
+
 
         /// <summary>
         /// Fill out a dataGridView with the query that is given like a parameter
