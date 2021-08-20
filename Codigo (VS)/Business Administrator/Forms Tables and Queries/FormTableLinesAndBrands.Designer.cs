@@ -37,6 +37,10 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewBrands = new System.Windows.Forms.DataGridView();
             this.TitleBrands = new System.Windows.Forms.Label();
             this.TitleLines = new System.Windows.Forms.Label();
+            this.buttonLineDelete = new System.Windows.Forms.Button();
+            this.buttonLineEdit = new System.Windows.Forms.Button();
+            this.buttonBrandDelete = new System.Windows.Forms.Button();
+            this.buttonBrandEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLines)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBrands)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +72,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -112,7 +116,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewBrands.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewBrands.EnableHeadersVisualStyles = false;
             this.dataGridViewBrands.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
-            this.dataGridViewBrands.Location = new System.Drawing.Point(12, 261);
+            this.dataGridViewBrands.Location = new System.Drawing.Point(12, 307);
             this.dataGridViewBrands.Name = "dataGridViewBrands";
             this.dataGridViewBrands.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridViewBrands.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
@@ -127,7 +131,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.TitleBrands.AutoSize = true;
             this.TitleBrands.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitleBrands.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
-            this.TitleBrands.Location = new System.Drawing.Point(12, 225);
+            this.TitleBrands.Location = new System.Drawing.Point(12, 271);
             this.TitleBrands.Name = "TitleBrands";
             this.TitleBrands.Size = new System.Drawing.Size(112, 33);
             this.TitleBrands.TabIndex = 1;
@@ -144,17 +148,87 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.TitleLines.TabIndex = 2;
             this.TitleLines.Text = "LINEAS";
             // 
+            // buttonLineDelete
+            // 
+            this.buttonLineDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.buttonLineDelete.FlatAppearance.BorderSize = 0;
+            this.buttonLineDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(40)))), ((int)(((byte)(55)))));
+            this.buttonLineDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLineDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.buttonLineDelete.ForeColor = System.Drawing.Color.White;
+            this.buttonLineDelete.Location = new System.Drawing.Point(328, 228);
+            this.buttonLineDelete.Name = "buttonLineDelete";
+            this.buttonLineDelete.Size = new System.Drawing.Size(304, 34);
+            this.buttonLineDelete.TabIndex = 8;
+            this.buttonLineDelete.Text = "Eliminar";
+            this.buttonLineDelete.UseVisualStyleBackColor = false;
+            // 
+            // buttonLineEdit
+            // 
+            this.buttonLineEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.buttonLineEdit.FlatAppearance.BorderSize = 0;
+            this.buttonLineEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.buttonLineEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLineEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.buttonLineEdit.ForeColor = System.Drawing.Color.White;
+            this.buttonLineEdit.Location = new System.Drawing.Point(12, 228);
+            this.buttonLineEdit.Name = "buttonLineEdit";
+            this.buttonLineEdit.Size = new System.Drawing.Size(304, 34);
+            this.buttonLineEdit.TabIndex = 7;
+            this.buttonLineEdit.Text = "Editar";
+            this.buttonLineEdit.UseVisualStyleBackColor = false;
+            // 
+            // buttonBrandDelete
+            // 
+            this.buttonBrandDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.buttonBrandDelete.FlatAppearance.BorderSize = 0;
+            this.buttonBrandDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(40)))), ((int)(((byte)(55)))));
+            this.buttonBrandDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBrandDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.buttonBrandDelete.ForeColor = System.Drawing.Color.White;
+            this.buttonBrandDelete.Location = new System.Drawing.Point(328, 492);
+            this.buttonBrandDelete.Name = "buttonBrandDelete";
+            this.buttonBrandDelete.Size = new System.Drawing.Size(304, 34);
+            this.buttonBrandDelete.TabIndex = 10;
+            this.buttonBrandDelete.Text = "Eliminar";
+            this.buttonBrandDelete.UseVisualStyleBackColor = false;
+            // 
+            // buttonBrandEdit
+            // 
+            this.buttonBrandEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.buttonBrandEdit.FlatAppearance.BorderSize = 0;
+            this.buttonBrandEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.buttonBrandEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBrandEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.buttonBrandEdit.ForeColor = System.Drawing.Color.White;
+            this.buttonBrandEdit.Location = new System.Drawing.Point(12, 492);
+            this.buttonBrandEdit.Name = "buttonBrandEdit";
+            this.buttonBrandEdit.Size = new System.Drawing.Size(304, 34);
+            this.buttonBrandEdit.TabIndex = 9;
+            this.buttonBrandEdit.Text = "Editar";
+            this.buttonBrandEdit.UseVisualStyleBackColor = false;
+            // 
             // FormTableLinesAndBrands
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 449);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.ClientSize = new System.Drawing.Size(644, 545);
+            this.Controls.Add(this.buttonBrandDelete);
+            this.Controls.Add(this.buttonBrandEdit);
+            this.Controls.Add(this.buttonLineDelete);
+            this.Controls.Add(this.buttonLineEdit);
             this.Controls.Add(this.TitleLines);
             this.Controls.Add(this.TitleBrands);
             this.Controls.Add(this.dataGridViewBrands);
             this.Controls.Add(this.dataGridViewLines);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormTableLinesAndBrands";
-            this.Text = "FormTableLinesAndBrands";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormTableLinesAndBrands_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLines)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBrands)).EndInit();
@@ -169,5 +243,9 @@ namespace Business_Administrator.Forms_Tables_and_Queries
         private System.Windows.Forms.DataGridView dataGridViewBrands;
         private System.Windows.Forms.Label TitleBrands;
         private System.Windows.Forms.Label TitleLines;
+        private System.Windows.Forms.Button buttonLineDelete;
+        private System.Windows.Forms.Button buttonLineEdit;
+        private System.Windows.Forms.Button buttonBrandDelete;
+        private System.Windows.Forms.Button buttonBrandEdit;
     }
 }

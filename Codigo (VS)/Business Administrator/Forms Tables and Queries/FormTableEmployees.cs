@@ -123,5 +123,10 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             }
             else MessageBox.Show("Selecciona solamente un registro, por favor");
         }
+
+        private void dataGridViewEmployees_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

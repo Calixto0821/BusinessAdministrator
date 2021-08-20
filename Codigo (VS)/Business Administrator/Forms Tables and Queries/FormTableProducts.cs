@@ -25,5 +25,15 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             string command = "EXEC displayDataProducts";
             connection.displayData(dataGridViewProducts, command);
         }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
