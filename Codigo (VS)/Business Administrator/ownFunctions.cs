@@ -14,6 +14,9 @@ namespace Business_Administrator
     class ownFunctions
     {
 
+        ConnectionDB connection = new ConnectionDB();
+
+
         public void emptyFields(TextBox[] field)
         {
             Console.WriteLine("Empty Fields =>");

@@ -57,7 +57,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.labelName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelName.Location = new System.Drawing.Point(23, 80);
+            this.labelName.Location = new System.Drawing.Point(23, 112);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(81, 19);
             this.labelName.TabIndex = 67;
@@ -70,7 +70,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxName.Location = new System.Drawing.Point(110, 80);
+            this.textBoxName.Location = new System.Drawing.Point(110, 112);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(178, 20);
             this.textBoxName.TabIndex = 68;
@@ -81,7 +81,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxReference.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxReference.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxReference.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxReference.Location = new System.Drawing.Point(110, 54);
+            this.textBoxReference.Location = new System.Drawing.Point(110, 86);
             this.textBoxReference.Name = "textBoxReference";
             this.textBoxReference.Size = new System.Drawing.Size(178, 20);
             this.textBoxReference.TabIndex = 69;
@@ -92,7 +92,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxBarcode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBarcode.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxBarcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxBarcode.Location = new System.Drawing.Point(110, 124);
+            this.textBoxBarcode.Location = new System.Drawing.Point(110, 156);
             this.textBoxBarcode.Name = "textBoxBarcode";
             this.textBoxBarcode.Size = new System.Drawing.Size(178, 20);
             this.textBoxBarcode.TabIndex = 70;
@@ -103,11 +103,12 @@ namespace Business_Administrator.Forms_Create
             this.textBoxPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPrice.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxPrice.Location = new System.Drawing.Point(110, 158);
+            this.textBoxPrice.Location = new System.Drawing.Point(110, 190);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(178, 20);
             this.textBoxPrice.TabIndex = 71;
             this.textBoxPrice.Text = "0";
+            this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
             // textBoxStock
             // 
@@ -115,11 +116,12 @@ namespace Business_Administrator.Forms_Create
             this.textBoxStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxStock.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxStock.Location = new System.Drawing.Point(110, 184);
+            this.textBoxStock.Location = new System.Drawing.Point(110, 216);
             this.textBoxStock.Name = "textBoxStock";
             this.textBoxStock.Size = new System.Drawing.Size(178, 20);
             this.textBoxStock.TabIndex = 73;
             this.textBoxStock.Text = "0";
+            this.textBoxStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
             // textBoxMinimumStock
             // 
@@ -127,17 +129,18 @@ namespace Business_Administrator.Forms_Create
             this.textBoxMinimumStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxMinimumStock.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxMinimumStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxMinimumStock.Location = new System.Drawing.Point(110, 221);
+            this.textBoxMinimumStock.Location = new System.Drawing.Point(110, 253);
             this.textBoxMinimumStock.Name = "textBoxMinimumStock";
             this.textBoxMinimumStock.Size = new System.Drawing.Size(178, 20);
             this.textBoxMinimumStock.TabIndex = 74;
             this.textBoxMinimumStock.Text = "0";
+            this.textBoxMinimumStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label11.Location = new System.Drawing.Point(12, 54);
+            this.label11.Location = new System.Drawing.Point(12, 86);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(92, 19);
             this.label11.TabIndex = 75;
@@ -148,7 +151,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label12.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label12.Location = new System.Drawing.Point(23, 108);
+            this.label12.Location = new System.Drawing.Point(23, 140);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(81, 50);
             this.label12.TabIndex = 76;
@@ -159,7 +162,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label13.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label13.Location = new System.Drawing.Point(27, 184);
+            this.label13.Location = new System.Drawing.Point(27, 216);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(77, 19);
             this.label13.TabIndex = 78;
@@ -170,7 +173,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label14.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label14.Location = new System.Drawing.Point(27, 158);
+            this.label14.Location = new System.Drawing.Point(27, 190);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(77, 19);
             this.label14.TabIndex = 77;
@@ -181,7 +184,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label1.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label1.Location = new System.Drawing.Point(12, 250);
+            this.label1.Location = new System.Drawing.Point(12, 282);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 19);
             this.label1.TabIndex = 80;
@@ -192,7 +195,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label4.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label4.Location = new System.Drawing.Point(16, 210);
+            this.label4.Location = new System.Drawing.Point(16, 242);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 40);
             this.label4.TabIndex = 79;
@@ -203,7 +206,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label2.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label2.Location = new System.Drawing.Point(31, 329);
+            this.label2.Location = new System.Drawing.Point(31, 361);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 19);
             this.label2.TabIndex = 83;
@@ -214,7 +217,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label15.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label15.Location = new System.Drawing.Point(27, 302);
+            this.label15.Location = new System.Drawing.Point(27, 334);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(77, 19);
             this.label15.TabIndex = 82;
@@ -225,7 +228,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label16.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label16.Location = new System.Drawing.Point(20, 275);
+            this.label16.Location = new System.Drawing.Point(20, 307);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(84, 19);
             this.label16.TabIndex = 81;
@@ -236,7 +239,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.comboBoxDealer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDealer.FormattingEnabled = true;
-            this.comboBoxDealer.Location = new System.Drawing.Point(110, 276);
+            this.comboBoxDealer.Location = new System.Drawing.Point(110, 308);
             this.comboBoxDealer.Name = "comboBoxDealer";
             this.comboBoxDealer.Size = new System.Drawing.Size(178, 21);
             this.comboBoxDealer.TabIndex = 8;
@@ -246,7 +249,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.comboBoxLine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLine.FormattingEnabled = true;
-            this.comboBoxLine.Location = new System.Drawing.Point(110, 303);
+            this.comboBoxLine.Location = new System.Drawing.Point(110, 335);
             this.comboBoxLine.Name = "comboBoxLine";
             this.comboBoxLine.Size = new System.Drawing.Size(178, 21);
             this.comboBoxLine.TabIndex = 9;
@@ -255,7 +258,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.comboBoxBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxBrand.FormattingEnabled = true;
-            this.comboBoxBrand.Location = new System.Drawing.Point(110, 330);
+            this.comboBoxBrand.Location = new System.Drawing.Point(110, 362);
             this.comboBoxBrand.Name = "comboBoxBrand";
             this.comboBoxBrand.Size = new System.Drawing.Size(178, 21);
             this.comboBoxBrand.TabIndex = 10;
@@ -266,7 +269,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDescription.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxDescription.Location = new System.Drawing.Point(110, 250);
+            this.textBoxDescription.Location = new System.Drawing.Point(110, 282);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(178, 20);
             this.textBoxDescription.TabIndex = 72;
@@ -279,13 +282,13 @@ namespace Business_Administrator.Forms_Create
             this.buttonInsert_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInsert_Update.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.buttonInsert_Update.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.buttonInsert_Update.Location = new System.Drawing.Point(110, 357);
+            this.buttonInsert_Update.Location = new System.Drawing.Point(110, 389);
             this.buttonInsert_Update.Name = "buttonInsert_Update";
             this.buttonInsert_Update.Size = new System.Drawing.Size(178, 33);
             this.buttonInsert_Update.TabIndex = 84;
             this.buttonInsert_Update.Text = "Agregar/Editar";
             this.buttonInsert_Update.UseVisualStyleBackColor = false;
-            this.buttonInsert_Update.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonInsert_Update.Click += new System.EventHandler(this.buttonInsert_Update_Click);
             // 
             // labelTitle
             // 
@@ -293,7 +296,7 @@ namespace Business_Administrator.Forms_Create
             this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.labelTitle.Location = new System.Drawing.Point(12, 9);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(276, 35);
+            this.labelTitle.Size = new System.Drawing.Size(276, 74);
             this.labelTitle.TabIndex = 85;
             this.labelTitle.Text = "PRODUCTO";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -304,7 +307,7 @@ namespace Business_Administrator.Forms_Create
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(300, 402);
+            this.ClientSize = new System.Drawing.Size(300, 432);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.buttonInsert_Update);
             this.Controls.Add(this.label2);
@@ -354,11 +357,11 @@ namespace Business_Administrator.Forms_Create
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBoxDealer;
-        private System.Windows.Forms.ComboBox comboBoxLine;
-        private System.Windows.Forms.ComboBox comboBoxBrand;
         public System.Windows.Forms.TextBox textBoxDescription;
         public System.Windows.Forms.Button buttonInsert_Update;
+        public System.Windows.Forms.ComboBox comboBoxDealer;
+        public System.Windows.Forms.ComboBox comboBoxLine;
+        public System.Windows.Forms.ComboBox comboBoxBrand;
         private System.Windows.Forms.Label labelTitle;
     }
 }

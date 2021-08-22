@@ -75,6 +75,7 @@ namespace Business_Administrator
                     comboBox.Items.Add(sqlDR[column].ToString());
                 }
                 sqlDR.Close();
+                Console.WriteLine(comboBox.Name + " fill successfully with " + comboBox.Items.Count + " items");
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
             finally
@@ -82,6 +83,41 @@ namespace Business_Administrator
                 connectionSQL.Close();
             }
         }
+
+        /// <summary>
+        /// Fill out a ComboBox with colum values and order specific, according a parameter
+        /// </summary>
+        /// <param name="comboBox"></param>
+        /// <param name="table"></param>
+        /// <param name="column"></param>
+        /// <param name="order"></param>
+        public void fillComboBoxAccordingToParameter(ComboBox comboBox, string table, string column, string parameterColumn, string parameter, string order = "id")
+        {
+            int indexComboBox = 0;
+            try
+            {
+                connectionSQL.Open();
+                SqlCommand commandQuery = new SqlCommand("SELECT * FROM " + table + " ORDER BY " + order, connectionSQL);
+                commandQuery.Parameters.AddWithValue("Parameter", parameter);
+                SqlDataReader sqlDR = commandQuery.ExecuteReader();
+
+                while (sqlDR.Read())
+                {
+                    if (sqlDR[parameterColumn].ToString() == parameter) indexComboBox = comboBox.Items.Count;
+                    comboBox.Items.Add(sqlDR[column].ToString());
+                }
+                sqlDR.Close();
+                Console.WriteLine(comboBox.Name+" fill successfully with "+comboBox.Items.Count+" items");
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
+            finally
+            {
+                comboBox.SelectedIndex = indexComboBox;
+                connectionSQL.Close();
+            }
+        }
+
+
 
         /// <summary>
         /// Search one ID according the parameters
@@ -646,6 +682,39 @@ namespace Business_Administrator
             
 
         }
+
+        public void update(string dealerIDToUpdate)
+        {
+            try
+            {
+                connection.openConnectionDB();
+
+                string commandUpdateDealer = "UPDATE DEALERS " +
+                    "SET [name]=@Name,[number_phone]=@Phone,[number_cellphone]=@Cellphone,[address]=@Address,[contact_email]=@Email " +
+                    "WHERE [id] = @dealerID";
+                SqlCommand commandDealer = new SqlCommand(commandUpdateDealer, connection.connectionSQL);
+                commandDealer.Parameters.AddWithValue("Name", name);
+                commandDealer.Parameters.AddWithValue("Phone", phone);
+                commandDealer.Parameters.AddWithValue("Cellphone", cellphone);
+                commandDealer.Parameters.AddWithValue("Address", address);
+                commandDealer.Parameters.AddWithValue("Web", web);
+                commandDealer.Parameters.AddWithValue("Email", contact_email);
+                commandDealer.Parameters.AddWithValue("dealerID", dealerIDToUpdate);
+                commandDealer.ExecuteNonQuery();
+                MessageBox.Show("Row updated successful (DEALER)");
+                Console.WriteLine("Row updated successful (DEALER)");
+            }
+            catch (SqlException Error)
+            {
+                MessageBox.Show("ERROR");
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from DEALERS\n" + Error);
+            }
+            finally
+            {
+                connection.closeConnectionDB();
+            }
+        }
+
     }
 
     public class Line
@@ -780,7 +849,43 @@ namespace Business_Administrator
             }
         }
 
-        
+        public void update(int productIDToUpdate)
+        {
+            try
+            {
+                connection.openConnectionDB();
+
+                string commandUpdateProduct = "UPDATE PRODUCTS " +
+                    "SET [reference]=@Reference,[name]=@Name,[barcode]=@Barcode,[price]=@Price,[stock]=@Stock,[minimum_stock]=@MinimumStock,[description]=@Description,[id_dealer]=@DealerID,[id_brand]=@BrandID,[id_line]=@LineID " +
+                    "WHERE id=@ProductID";
+                SqlCommand commandProduct = new SqlCommand(commandUpdateProduct, connection.connectionSQL);
+                commandProduct.Parameters.AddWithValue("Reference", reference);
+                commandProduct.Parameters.AddWithValue("Name", name);
+                commandProduct.Parameters.AddWithValue("Price", price);
+                commandProduct.Parameters.AddWithValue("Barcode", barcode);
+                commandProduct.Parameters.AddWithValue("Stock", stock);
+                commandProduct.Parameters.AddWithValue("MinimumStock", minimum_stock);
+                commandProduct.Parameters.AddWithValue("Description", description);
+                commandProduct.Parameters.AddWithValue("DealerID", id_dealer);
+                commandProduct.Parameters.AddWithValue("BrandID", id_brand);
+                commandProduct.Parameters.AddWithValue("LineID", id_line);
+                commandProduct.Parameters.AddWithValue("ProductID", productIDToUpdate);
+                commandProduct.ExecuteNonQuery();
+                MessageBox.Show("Row updated successful (PRODUCT)");
+                Console.WriteLine("Row updated successful (PRODUCT)");
+            }
+            catch (SqlException Error)
+            {
+                MessageBox.Show("ERROR");
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from PRODUCTS\n" + Error);
+            }
+            finally
+            {
+                connection.closeConnectionDB();
+            }
+        }
+
+
     }
 
     public class Service
@@ -821,6 +926,37 @@ namespace Business_Administrator
             {
                 MessageBox.Show("ERROR");
                 Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);
+            }
+            finally
+            {
+                connection.closeConnectionDB();
+            }
+        }
+
+        public void update(string serviceIDToUpdate)
+        {
+            try
+            {
+                connection.openConnectionDB();
+
+                string commandUpdateDealer = "UPDATE SERVICES" +
+                    "SET [name]=@Name,[reference]=@Reference,[barcode]=@Barcode,[price]=@Price,[description]=@Description " +
+                    "WHERE [id] = @serviceID";
+                SqlCommand commandDealer = new SqlCommand(commandUpdateDealer, connection.connectionSQL);
+                commandDealer.Parameters.AddWithValue("Name", name);
+                commandDealer.Parameters.AddWithValue("Reference", reference);
+                commandDealer.Parameters.AddWithValue("Barcide", barcode);
+                commandDealer.Parameters.AddWithValue("Price", price);
+                commandDealer.Parameters.AddWithValue("Description", description);;
+                commandDealer.Parameters.AddWithValue("serviceID", serviceIDToUpdate);
+                commandDealer.ExecuteNonQuery();
+                MessageBox.Show("Row updated successful (SERVICE)");
+                Console.WriteLine("Row updated successful (SERVICE)");
+            }
+            catch (SqlException Error)
+            {
+                MessageBox.Show("ERROR");
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from SERVICES\n" + Error);
             }
             finally
             {

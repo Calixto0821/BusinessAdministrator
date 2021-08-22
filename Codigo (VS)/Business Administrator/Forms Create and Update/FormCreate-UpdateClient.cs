@@ -23,8 +23,7 @@ namespace Business_Administrator
         public FormCreate_UpdateClient()
         {
             InitializeComponent();
-            connection.tryConnection(this);
-            
+            connection.tryConnection(this);   
         }
 
         #region ValidateData
@@ -37,7 +36,7 @@ namespace Business_Administrator
         {
             if (insertMood) labelTitle.Text = "REGISTRAR USUARIO";
             else if (updateMood) labelTitle.Text = "ACTUALIZAR USUARIO";
-            else Console.WriteLine("Error mood Form");
+            else Console.WriteLine("Error mood Client");
         }
 
         private void buttonInsert_Update_Click(object sender, EventArgs e)

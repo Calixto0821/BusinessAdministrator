@@ -27,6 +27,25 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             string command = "EXEC displayDataEmployees";
             connection.displayData(dataGridViewEmployees, command);
         }
+
+        private void checkUser(string docuUser)
+        {
+            FormCreate_UpdateEmployee FormEmployee = new FormCreate_UpdateEmployee();
+            if (Globals.documentCurrentUser != docuUser)
+            {
+                Console.WriteLine("DISTINTC USER ([" + Globals.documentCurrentUser + "]!=[" + docuUser + "])");
+                FormEmployee.textBoxPassword.Enabled = false;
+                FormEmployee.textBoxPassword.UseSystemPasswordChar = true;
+                FormEmployee.textBoxUser.Enabled = false;
+            }
+            else if (Globals.documentCurrentUser == docuUser)
+            {
+                Console.WriteLine("SAME USER ([" + Globals.documentCurrentUser + "]==[" + docuUser + "])");
+                FormEmployee.textBoxPassword.Enabled = true;
+                FormEmployee.textBoxPassword.UseSystemPasswordChar = false;
+                FormEmployee.textBoxUser.Enabled = true;
+            }
+        }
         
         private void FormTableEmployees_Load(object sender, EventArgs e)
         {
@@ -49,7 +68,6 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             FormCreate_UpdateEmployee FormEmployee = new FormCreate_UpdateEmployee();
             if (dataGridViewEmployees.SelectedRows.Count == 1)
             {
-                string process = null;
                 try 
                 {
                     string documentUser = dataGridViewEmployees.CurrentRow.Cells["DOCUMENT"].Value.ToString().Trim();
@@ -64,36 +82,20 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     FormEmployee.textBoxCellphone.Text = dataTableUsers.Rows[0]["cellphone_Number"].ToString().Trim();
                     FormEmployee.textBoxUser.Text = dataTableEmployees.Rows[0]["nickname"].ToString().Trim();
                     FormEmployee.textBoxPassword.Text = dataTableEmployees.Rows[0]["password"].ToString().Trim();
-                    process = "Assignment successfully completed";
+                    Console.WriteLine("Assignment successfully completed");
+                    
                     FormEmployee.updateMood = true;
                     FormEmployee.insertMood = false;
                     FormEmployee.administratorMood = false;
                     FormEmployee.textBoxDocument.Enabled = false;
-                    if (Globals.documentCurrentUser != documentUser)
-                    {
-                        Console.WriteLine("DISTINTC USER (["+Globals.documentCurrentUser+"]!=["+documentUser+"])");
-                        FormEmployee.textBoxPassword.Enabled = false;
-                        FormEmployee.textBoxPassword.UseSystemPasswordChar = true;
-                        FormEmployee.textBoxUser.Enabled = false;
-                    }
-                    else if(Globals.documentCurrentUser == documentUser)
-                    {
-                        Console.WriteLine("SAME USER ([" + Globals.documentCurrentUser + "]==[" + documentUser + "])");
-                        FormEmployee.textBoxPassword.Enabled = true;
-                        FormEmployee.textBoxPassword.UseSystemPasswordChar = false;
-                        FormEmployee.textBoxUser.Enabled = true;
-                    }
+                    checkUser(documentUser);
                     FormEmployee.ShowDialog();
                     dataUpload();
                 }
                 catch (SqlException Error)
                 {
-                    process = "Error when completing the assignment => " + Error;
+                    Console.WriteLine("Process: Error when completing the assignment => " + Error);
                     MessageBox.Show("Sucedio un error");
-                }
-                finally
-                {
-                    Console.WriteLine("Process: " + process);
                 }
             }
             else MessageBox.Show("Selecciona solamente un registro, por favor");

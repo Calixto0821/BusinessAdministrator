@@ -29,7 +29,6 @@ namespace Business_Administrator.Forms_Create
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelTitle = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -41,24 +40,14 @@ namespace Business_Administrator.Forms_Create
             this.textBoxBarcode = new System.Windows.Forms.TextBox();
             this.textBoxReference = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // labelTitle
-            // 
-            this.labelTitle.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold);
-            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
-            this.labelTitle.Location = new System.Drawing.Point(12, 9);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(276, 35);
-            this.labelTitle.TabIndex = 89;
-            this.labelTitle.Text = "SERVICIO";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label11.Location = new System.Drawing.Point(12, 59);
+            this.label11.Location = new System.Drawing.Point(15, 86);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(92, 19);
             this.label11.TabIndex = 91;
@@ -69,7 +58,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.labelName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelName.Location = new System.Drawing.Point(23, 85);
+            this.labelName.Location = new System.Drawing.Point(26, 112);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(81, 19);
             this.labelName.TabIndex = 92;
@@ -80,7 +69,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label12.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label12.Location = new System.Drawing.Point(23, 104);
+            this.label12.Location = new System.Drawing.Point(26, 131);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(81, 50);
             this.label12.TabIndex = 93;
@@ -91,7 +80,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label1.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label1.Location = new System.Drawing.Point(12, 180);
+            this.label1.Location = new System.Drawing.Point(15, 207);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 19);
             this.label1.TabIndex = 95;
@@ -102,7 +91,7 @@ namespace Business_Administrator.Forms_Create
             // 
             this.label14.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.label14.Location = new System.Drawing.Point(27, 154);
+            this.label14.Location = new System.Drawing.Point(30, 181);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(77, 19);
             this.label14.TabIndex = 94;
@@ -117,7 +106,7 @@ namespace Business_Administrator.Forms_Create
             this.buttonInsert_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInsert_Update.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.buttonInsert_Update.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.buttonInsert_Update.Location = new System.Drawing.Point(110, 206);
+            this.buttonInsert_Update.Location = new System.Drawing.Point(113, 233);
             this.buttonInsert_Update.Name = "buttonInsert_Update";
             this.buttonInsert_Update.Size = new System.Drawing.Size(178, 33);
             this.buttonInsert_Update.TabIndex = 96;
@@ -131,7 +120,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDescription.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxDescription.Location = new System.Drawing.Point(110, 180);
+            this.textBoxDescription.Location = new System.Drawing.Point(113, 207);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(178, 20);
             this.textBoxDescription.TabIndex = 101;
@@ -142,11 +131,12 @@ namespace Business_Administrator.Forms_Create
             this.textBoxPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPrice.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxPrice.Location = new System.Drawing.Point(110, 154);
+            this.textBoxPrice.Location = new System.Drawing.Point(113, 181);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(178, 20);
             this.textBoxPrice.TabIndex = 100;
             this.textBoxPrice.Text = "0";
+            this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
             // textBoxBarcode
             // 
@@ -154,7 +144,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxBarcode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBarcode.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxBarcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxBarcode.Location = new System.Drawing.Point(110, 120);
+            this.textBoxBarcode.Location = new System.Drawing.Point(113, 147);
             this.textBoxBarcode.Name = "textBoxBarcode";
             this.textBoxBarcode.Size = new System.Drawing.Size(178, 20);
             this.textBoxBarcode.TabIndex = 99;
@@ -165,7 +155,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxReference.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxReference.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxReference.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxReference.Location = new System.Drawing.Point(110, 59);
+            this.textBoxReference.Location = new System.Drawing.Point(113, 86);
             this.textBoxReference.Name = "textBoxReference";
             this.textBoxReference.Size = new System.Drawing.Size(178, 20);
             this.textBoxReference.TabIndex = 98;
@@ -176,10 +166,21 @@ namespace Business_Administrator.Forms_Create
             this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxName.Location = new System.Drawing.Point(110, 85);
+            this.textBoxName.Location = new System.Drawing.Point(113, 112);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(178, 20);
             this.textBoxName.TabIndex = 97;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold);
+            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.labelTitle.Location = new System.Drawing.Point(12, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(279, 74);
+            this.labelTitle.TabIndex = 102;
+            this.labelTitle.Text = "SERVICIO";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormCreate_UpdateService
             // 
@@ -187,7 +188,8 @@ namespace Business_Administrator.Forms_Create
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(303, 251);
+            this.ClientSize = new System.Drawing.Size(303, 278);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.textBoxBarcode);
@@ -199,7 +201,6 @@ namespace Business_Administrator.Forms_Create
             this.Controls.Add(this.label12);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.labelTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -212,7 +213,6 @@ namespace Business_Administrator.Forms_Create
         }
 
         #endregion
-        private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label label12;
@@ -224,5 +224,6 @@ namespace Business_Administrator.Forms_Create
         public System.Windows.Forms.TextBox textBoxBarcode;
         public System.Windows.Forms.TextBox textBoxReference;
         public System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label labelTitle;
     }
 }

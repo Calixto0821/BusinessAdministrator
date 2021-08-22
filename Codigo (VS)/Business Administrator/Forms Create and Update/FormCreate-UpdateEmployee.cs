@@ -35,7 +35,6 @@ namespace Business_Administrator
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             TextBox[] fieldsForm= {textBoxFirstName,textBoxLastName,textBoxDocument,textBoxCellphone, textBoxEmail,textBoxUser, textBoxPassword};
-
             if (Functions.checkFields(fieldsForm))
             {
                 if (Functions.checkValidEmail(textBoxEmail.Text))

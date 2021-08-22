@@ -51,7 +51,7 @@ namespace Business_Administrator
             this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxEmail.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxEmail.Location = new System.Drawing.Point(91, 188);
+            this.textBoxEmail.Location = new System.Drawing.Point(91, 216);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(184, 20);
             this.textBoxEmail.TabIndex = 50;
@@ -62,7 +62,7 @@ namespace Business_Administrator
             this.textBoxWeb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxWeb.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxWeb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxWeb.Location = new System.Drawing.Point(91, 162);
+            this.textBoxWeb.Location = new System.Drawing.Point(91, 190);
             this.textBoxWeb.Name = "textBoxWeb";
             this.textBoxWeb.Size = new System.Drawing.Size(184, 20);
             this.textBoxWeb.TabIndex = 49;
@@ -73,7 +73,7 @@ namespace Business_Administrator
             this.textBoxAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxAddress.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxAddress.Location = new System.Drawing.Point(91, 136);
+            this.textBoxAddress.Location = new System.Drawing.Point(91, 164);
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(184, 20);
             this.textBoxAddress.TabIndex = 48;
@@ -84,10 +84,11 @@ namespace Business_Administrator
             this.textBoxPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPhone.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxPhone.Location = new System.Drawing.Point(91, 110);
+            this.textBoxPhone.Location = new System.Drawing.Point(91, 138);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(184, 20);
             this.textBoxPhone.TabIndex = 47;
+            this.textBoxPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
             // textBoxCellphone
             // 
@@ -95,10 +96,11 @@ namespace Business_Administrator
             this.textBoxCellphone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCellphone.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxCellphone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxCellphone.Location = new System.Drawing.Point(91, 84);
+            this.textBoxCellphone.Location = new System.Drawing.Point(91, 112);
             this.textBoxCellphone.Name = "textBoxCellphone";
             this.textBoxCellphone.Size = new System.Drawing.Size(184, 20);
             this.textBoxCellphone.TabIndex = 46;
+            this.textBoxCellphone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
             // textBoxName
             // 
@@ -106,7 +108,7 @@ namespace Business_Administrator
             this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.textBoxName.Location = new System.Drawing.Point(91, 58);
+            this.textBoxName.Location = new System.Drawing.Point(91, 86);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(184, 20);
             this.textBoxName.TabIndex = 45;
@@ -116,7 +118,7 @@ namespace Business_Administrator
             this.labelWeb.AutoSize = true;
             this.labelWeb.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelWeb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelWeb.Location = new System.Drawing.Point(44, 162);
+            this.labelWeb.Location = new System.Drawing.Point(44, 190);
             this.labelWeb.Name = "labelWeb";
             this.labelWeb.Size = new System.Drawing.Size(41, 19);
             this.labelWeb.TabIndex = 56;
@@ -127,7 +129,7 @@ namespace Business_Administrator
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelEmail.Location = new System.Drawing.Point(36, 188);
+            this.labelEmail.Location = new System.Drawing.Point(36, 216);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(49, 19);
             this.labelEmail.TabIndex = 55;
@@ -138,7 +140,7 @@ namespace Business_Administrator
             this.labelAddress.AutoSize = true;
             this.labelAddress.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelAddress.Location = new System.Drawing.Point(12, 136);
+            this.labelAddress.Location = new System.Drawing.Point(12, 164);
             this.labelAddress.Name = "labelAddress";
             this.labelAddress.Size = new System.Drawing.Size(73, 19);
             this.labelAddress.TabIndex = 54;
@@ -149,7 +151,7 @@ namespace Business_Administrator
             this.labelCellphone.AutoSize = true;
             this.labelCellphone.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelCellphone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelCellphone.Location = new System.Drawing.Point(26, 110);
+            this.labelCellphone.Location = new System.Drawing.Point(26, 138);
             this.labelCellphone.Name = "labelCellphone";
             this.labelCellphone.Size = new System.Drawing.Size(59, 19);
             this.labelCellphone.TabIndex = 53;
@@ -160,7 +162,7 @@ namespace Business_Administrator
             this.labelPhone.AutoSize = true;
             this.labelPhone.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelPhone.Location = new System.Drawing.Point(16, 84);
+            this.labelPhone.Location = new System.Drawing.Point(16, 112);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(69, 19);
             this.labelPhone.TabIndex = 52;
@@ -171,7 +173,7 @@ namespace Business_Administrator
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.labelName.Location = new System.Drawing.Point(21, 58);
+            this.labelName.Location = new System.Drawing.Point(21, 86);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(64, 19);
             this.labelName.TabIndex = 51;
@@ -185,13 +187,13 @@ namespace Business_Administrator
             this.buttonInsert_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInsert_Update.Font = new System.Drawing.Font("Roboto Condensed", 12F);
             this.buttonInsert_Update.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.buttonInsert_Update.Location = new System.Drawing.Point(91, 214);
+            this.buttonInsert_Update.Location = new System.Drawing.Point(91, 242);
             this.buttonInsert_Update.Name = "buttonInsert_Update";
             this.buttonInsert_Update.Size = new System.Drawing.Size(184, 33);
             this.buttonInsert_Update.TabIndex = 57;
             this.buttonInsert_Update.Text = "Agregar/Editar";
             this.buttonInsert_Update.UseVisualStyleBackColor = false;
-            this.buttonInsert_Update.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonInsert_Update.Click += new System.EventHandler(this.buttonInsert_Update_Click);
             // 
             // labelTitle
             // 
@@ -199,7 +201,7 @@ namespace Business_Administrator
             this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.labelTitle.Location = new System.Drawing.Point(12, 9);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(263, 35);
+            this.labelTitle.Size = new System.Drawing.Size(263, 74);
             this.labelTitle.TabIndex = 58;
             this.labelTitle.Text = "PROVEEDOR";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -210,7 +212,7 @@ namespace Business_Administrator
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(287, 261);
+            this.ClientSize = new System.Drawing.Size(287, 285);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.buttonInsert_Update);
             this.Controls.Add(this.labelWeb);
@@ -230,6 +232,7 @@ namespace Business_Administrator
             this.MinimizeBox = false;
             this.Name = "FormCreate_UpdateDealer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FormCreate_UpdateDealer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

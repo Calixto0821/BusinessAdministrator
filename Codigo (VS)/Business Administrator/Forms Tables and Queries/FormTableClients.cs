@@ -23,11 +23,12 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         ConnectionDB connection = new ConnectionDB();
 
-        public void dataUpload()
+        private void dataUpload()
         {
             string command = "EXEC displayDataClients";
             connection.displayData(dataGridViewClients, command);
         }
+
         private void FormTableClients_Load(object sender, EventArgs e)
         {
             dataUpload();
@@ -38,13 +39,12 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             FormCreate_UpdateClient FormClient = new FormCreate_UpdateClient();
             if (dataGridViewClients.SelectedRows.Count == 1)
             {
-                string process = null;
                 try
                 {
-                    string documentUser = dataGridViewClients.CurrentRow.Cells["DOCUMENT"].Value.ToString().Trim();
-                    string[] parametersQueryUsers = {"*", "USERS", "document='" + documentUser + "' AND user_type = 2" };
+                    string userDocument = dataGridViewClients.CurrentRow.Cells["DOCUMENT"].Value.ToString().Trim();
+                    string[] parametersQueryUsers = {"*", "USERS", "document='" + userDocument + "' AND user_type = 2" };
                     DataTable dataTableUsers = connection.querySelect(parametersQueryUsers);
-                    string[] parametersQueryClients = {"*", "CLIENTS", "document_user='" + documentUser + "'" };
+                    string[] parametersQueryClients = {"*", "CLIENTS", "document_user='" + userDocument + "'" };
                     DataTable dataTableClients = connection.querySelect(parametersQueryClients);
                     FormClient.textBoxFirstName.Text = dataTableUsers.Rows[0]["first_Name"].ToString().Trim();
                     FormClient.textBoxLastName.Text = dataTableUsers.Rows[0]["last_Name"].ToString().Trim();
@@ -53,7 +53,8 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     FormClient.textBoxCellphone.Text = dataTableUsers.Rows[0]["cellphone_Number"].ToString().Trim();
                     FormClient.textBoxBalance.Text = dataTableClients.Rows[0]["balance"].ToString().Trim();
                     FormClient.textBoxDebt.Text = dataTableClients.Rows[0]["debt"].ToString().Trim();
-                    process = "Assignment successfully completed";
+                    Console.WriteLine("Assignment successfully completed");
+
                     FormClient.updateMood = true;
                     FormClient.insertMood = false;
                     FormClient.textBoxDocument.Enabled = false;
@@ -61,15 +62,11 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     FormClient.ShowDialog();
                     dataUpload();
                 }
-                catch(SqlException Error)
+                catch (SqlException Error)
                 {
-                    process = "Error when completing the assignment => " + Error;
+                    Console.WriteLine("Process: Error when completing the assignment => " + Error);
                     MessageBox.Show("Sucedio un error");
                 }
-                finally
-                {
-                    Console.WriteLine("Process: "+process);
-                }                
             }
             else MessageBox.Show("Selecciona solamente un registro, por favor");
         }

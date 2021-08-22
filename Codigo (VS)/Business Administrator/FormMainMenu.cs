@@ -80,6 +80,9 @@ namespace Business_Administrator
         private void buttonCreateDealer_Click(object sender, EventArgs e)
         {
             FormCreate_UpdateDealer createDealer = new FormCreate_UpdateDealer();
+            createDealer.insertMood = true;
+            createDealer.updateMood = false;
+            createDealer.buttonInsert_Update.Text = "Agregar";
             createDealer.Show();
         }
 
