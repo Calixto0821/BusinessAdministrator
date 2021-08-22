@@ -43,9 +43,9 @@ namespace Business_Administrator.Forms_Create
 
         private void buttonInsert_Update_Click(object sender, EventArgs e)
         {
-            TextBox[] textBoxes = { textBoxReference, textBoxName, textBoxBarcode, textBoxPrice, textBoxStock, textBoxMinimumStock };
+            TextBox[] fieldsForm = { textBoxReference, textBoxName, textBoxBarcode, textBoxPrice, textBoxStock, textBoxMinimumStock };
             ComboBox[] comboBoxes = { comboBoxDealer, comboBoxBrand, comboBoxLine };
-            if (Functions.checkFields(textBoxes) && Functions.checkCombos(comboBoxes))
+            if (Functions.checkFields(fieldsForm) && Functions.checkCombos(comboBoxes))
             {
                 if (0 != Convert.ToDouble(textBoxPrice.Text))
                 {
@@ -79,8 +79,10 @@ namespace Business_Administrator.Forms_Create
 
                     }
                     else Console.WriteLine("Both moods are flase");
-                    
+
+                    Functions.emptyFields(fieldsForm);
                     this.DialogResult = DialogResult.OK;
+                    this.Dispose();
                 }
                 else MessageBox.Show("Ingresa un precio Valido por favor");
             }

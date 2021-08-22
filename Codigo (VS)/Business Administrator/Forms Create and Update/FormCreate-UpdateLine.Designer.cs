@@ -78,6 +78,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxName.Font = new System.Drawing.Font("Roboto Condensed", 12F);
+            this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.textBoxName.Location = new System.Drawing.Point(82, 54);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(172, 20);
@@ -98,6 +99,7 @@ namespace Business_Administrator.Forms_Create
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCreate_UpdateLine";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 

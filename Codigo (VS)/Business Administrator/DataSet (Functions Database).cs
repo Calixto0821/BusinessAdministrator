@@ -228,13 +228,13 @@ namespace Business_Administrator
                 {
                     Console.WriteLine("FAILED VALIDATION => The password was wrong");
                     MessageBox.Show( "Contraseña incorrecta","Error en validacion", MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    return DialogResult.No;
+                    return DialogResult.None;
                 }
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                return DialogResult.No;
+                return DialogResult.None;
             }
             finally
             {
@@ -939,13 +939,13 @@ namespace Business_Administrator
             {
                 connection.openConnectionDB();
 
-                string commandUpdateDealer = "UPDATE SERVICES" +
-                    "SET [name]=@Name,[reference]=@Reference,[barcode]=@Barcode,[price]=@Price,[description]=@Description " +
+                string commandUpdateDealer = "UPDATE SERVICES " +
+                    "SET [name] = @Name,[reference] = @Reference,[barcode] = @Barcode,[price] = @Price,[description] = @Description " +
                     "WHERE [id] = @serviceID";
                 SqlCommand commandDealer = new SqlCommand(commandUpdateDealer, connection.connectionSQL);
                 commandDealer.Parameters.AddWithValue("Name", name);
                 commandDealer.Parameters.AddWithValue("Reference", reference);
-                commandDealer.Parameters.AddWithValue("Barcide", barcode);
+                commandDealer.Parameters.AddWithValue("Barcode", barcode);
                 commandDealer.Parameters.AddWithValue("Price", price);
                 commandDealer.Parameters.AddWithValue("Description", description);;
                 commandDealer.Parameters.AddWithValue("serviceID", serviceIDToUpdate);

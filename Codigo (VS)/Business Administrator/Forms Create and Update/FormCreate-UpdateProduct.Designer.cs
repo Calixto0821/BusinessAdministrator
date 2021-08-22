@@ -73,7 +73,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxName.Location = new System.Drawing.Point(110, 112);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(178, 20);
-            this.textBoxName.TabIndex = 68;
+            this.textBoxName.TabIndex = 2;
             // 
             // textBoxReference
             // 
@@ -84,7 +84,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxReference.Location = new System.Drawing.Point(110, 86);
             this.textBoxReference.Name = "textBoxReference";
             this.textBoxReference.Size = new System.Drawing.Size(178, 20);
-            this.textBoxReference.TabIndex = 69;
+            this.textBoxReference.TabIndex = 1;
             // 
             // textBoxBarcode
             // 
@@ -95,7 +95,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxBarcode.Location = new System.Drawing.Point(110, 156);
             this.textBoxBarcode.Name = "textBoxBarcode";
             this.textBoxBarcode.Size = new System.Drawing.Size(178, 20);
-            this.textBoxBarcode.TabIndex = 70;
+            this.textBoxBarcode.TabIndex = 3;
             // 
             // textBoxPrice
             // 
@@ -106,7 +106,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxPrice.Location = new System.Drawing.Point(110, 190);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(178, 20);
-            this.textBoxPrice.TabIndex = 71;
+            this.textBoxPrice.TabIndex = 4;
             this.textBoxPrice.Text = "0";
             this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
@@ -119,7 +119,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxStock.Location = new System.Drawing.Point(110, 216);
             this.textBoxStock.Name = "textBoxStock";
             this.textBoxStock.Size = new System.Drawing.Size(178, 20);
-            this.textBoxStock.TabIndex = 73;
+            this.textBoxStock.TabIndex = 5;
             this.textBoxStock.Text = "0";
             this.textBoxStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
@@ -132,7 +132,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxMinimumStock.Location = new System.Drawing.Point(110, 253);
             this.textBoxMinimumStock.Name = "textBoxMinimumStock";
             this.textBoxMinimumStock.Size = new System.Drawing.Size(178, 20);
-            this.textBoxMinimumStock.TabIndex = 74;
+            this.textBoxMinimumStock.TabIndex = 6;
             this.textBoxMinimumStock.Text = "0";
             this.textBoxMinimumStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateNumbers_KeyPress);
             // 
@@ -272,7 +272,7 @@ namespace Business_Administrator.Forms_Create
             this.textBoxDescription.Location = new System.Drawing.Point(110, 282);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(178, 20);
-            this.textBoxDescription.TabIndex = 72;
+            this.textBoxDescription.TabIndex = 7;
             // 
             // buttonInsert_Update
             // 
@@ -285,7 +285,7 @@ namespace Business_Administrator.Forms_Create
             this.buttonInsert_Update.Location = new System.Drawing.Point(110, 389);
             this.buttonInsert_Update.Name = "buttonInsert_Update";
             this.buttonInsert_Update.Size = new System.Drawing.Size(178, 33);
-            this.buttonInsert_Update.TabIndex = 84;
+            this.buttonInsert_Update.TabIndex = 11;
             this.buttonInsert_Update.Text = "Agregar/Editar";
             this.buttonInsert_Update.UseVisualStyleBackColor = false;
             this.buttonInsert_Update.Click += new System.EventHandler(this.buttonInsert_Update_Click);
@@ -334,6 +334,7 @@ namespace Business_Administrator.Forms_Create
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCreate_UpdateProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormCreateProduct_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

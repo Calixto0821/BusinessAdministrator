@@ -101,7 +101,10 @@ namespace Business_Administrator
         private void buttonCreateProduct_Click(object sender, EventArgs e)
         {
             Forms_Create.FormCreate_UpdateProduct createProduct = new Forms_Create.FormCreate_UpdateProduct();
-            createProduct.Show();
+            createProduct.insertMood = true;
+            createProduct.updateMood = false;
+            createProduct.buttonInsert_Update.Text = "Agregar";
+            createProduct.Show(); ;
         }
 
         private void buttonCreateService_Click(object sender, EventArgs e)
