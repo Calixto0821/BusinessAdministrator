@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.Data.SqlClient;
+using Business_Administrator.Forms_Create;
+using Business_Administrator.Forms_Tables_and_Queries;
+
 
 namespace Business_Administrator
 {
@@ -88,19 +91,19 @@ namespace Business_Administrator
 
         private void buttonCreateLine_Click(object sender, EventArgs e)
         {
-            Forms_Create.FormCreate_UpdateLine createLine = new Forms_Create.FormCreate_UpdateLine();
+            FormCreate_UpdateLine createLine = new FormCreate_UpdateLine();
             createLine.Show();
         }
 
         private void buttonCreateBrand_Click(object sender, EventArgs e)
         {
-            Forms_Create.FormCreate_UpdateBrand createBrand = new Forms_Create.FormCreate_UpdateBrand();
+            FormCreate_UpdateBrand createBrand = new FormCreate_UpdateBrand();
             createBrand.Show();
         }
 
         private void buttonCreateProduct_Click(object sender, EventArgs e)
         {
-            Forms_Create.FormCreate_UpdateProduct createProduct = new Forms_Create.FormCreate_UpdateProduct();
+            FormCreate_UpdateProduct createProduct = new FormCreate_UpdateProduct();
             createProduct.insertMood = true;
             createProduct.updateMood = false;
             createProduct.buttonInsert_Update.Text = "Agregar";
@@ -109,43 +112,43 @@ namespace Business_Administrator
 
         private void buttonCreateService_Click(object sender, EventArgs e)
         {
-            Forms_Create.FormCreate_UpdateService createService = new Forms_Create.FormCreate_UpdateService();
+            FormCreate_UpdateService createService = new FormCreate_UpdateService();
             createService.Show();
         }
 
         private void buttonSeeEmployees_Click(object sender, EventArgs e)
         {
-            Forms_Tables_and_Queries.FormTableEmployees formTableEmployees = new Forms_Tables_and_Queries.FormTableEmployees();
+            FormTableEmployees formTableEmployees = new FormTableEmployees();
             formTableEmployees.Show();
         }
 
         private void buttonSeeLinesAndBrands_Click(object sender, EventArgs e)
         {
-            Forms_Tables_and_Queries.FormTableLinesAndBrands formTableLinesAndBrands = new Forms_Tables_and_Queries.FormTableLinesAndBrands();
+            FormTableLinesAndBrands formTableLinesAndBrands = new FormTableLinesAndBrands();
             formTableLinesAndBrands.Show();
         }
 
         private void buttonSeeClients_Click(object sender, EventArgs e)
         {
-            Forms_Tables_and_Queries.FormTableClients formTableClients = new Forms_Tables_and_Queries.FormTableClients();
+            FormTableClients formTableClients = new FormTableClients();
             formTableClients.Show();
         }
 
         private void buttonSeeDealers_Click(object sender, EventArgs e)
         {
-            Forms_Tables_and_Queries.FormTableDealers formTableDealers = new Forms_Tables_and_Queries.FormTableDealers();
+            FormTableDealers formTableDealers = new FormTableDealers();
             formTableDealers.Show();
         }
 
         private void buttonSeeProducts_Click(object sender, EventArgs e)
         {
-            Forms_Tables_and_Queries.FormTableProducts formTableProducts = new Forms_Tables_and_Queries.FormTableProducts();
+            FormTableProducts formTableProducts = new FormTableProducts();
             formTableProducts.Show();
         }
 
         private void buttonSeeServices_Click(object sender, EventArgs e)
         {
-            Forms_Tables_and_Queries.FormTableServices formTableServices = new Forms_Tables_and_Queries.FormTableServices();
+            FormTableServices formTableServices = new FormTableServices();
             formTableServices.Show();
         }
         private void buttonClose_Click(object sender, EventArgs e)
