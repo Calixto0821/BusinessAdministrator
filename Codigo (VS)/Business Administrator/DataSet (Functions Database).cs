@@ -13,7 +13,7 @@ namespace Business_Administrator
 {
     public class ConnectionDB
     {
-        public SqlConnection connectionSQL = new SqlConnection("Data Source=PC-JUAN\\SQLEXPRESS;Initial Catalog=BUSINESS_ADMINISTRATOR;Integrated Security=True");
+        public SqlConnection connectionSQL = new SqlConnection("Data Source=LAPTOP-JUAN;Initial Catalog=BUSINESS_ADMINISTRATOR;Integrated Security=True");
 
         /// <summary>
         /// Open SQL database connection

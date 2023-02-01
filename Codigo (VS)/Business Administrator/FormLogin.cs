@@ -116,7 +116,6 @@ namespace Business_Administrator
             create_Admin.administratorMood = true;
             create_Admin.Activate();
             create_Admin.Show();
-            this.Close();
         }
 
         private void buttonCloseApplication_Click(object sender, EventArgs e)
