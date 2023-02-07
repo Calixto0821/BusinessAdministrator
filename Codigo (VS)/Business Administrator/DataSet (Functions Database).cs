@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Windows;
+using System.Net;
 
 namespace Business_Administrator
 {
@@ -690,7 +691,7 @@ namespace Business_Administrator
                 connection.openConnectionDB();
 
                 string commandUpdateDealer = "UPDATE DEALERS " +
-                    "SET [name]=@Name,[number_phone]=@Phone,[number_cellphone]=@Cellphone,[address]=@Address,[contact_email]=@Email " +
+                    "SET [name]=@Name,[number_phone]=@Phone,[number_cellphone]=@Cellphone,[address]=@Address,[contact_email]=@Email,[web]=@Web " +
                     "WHERE [id] = @dealerID";
                 SqlCommand commandDealer = new SqlCommand(commandUpdateDealer, connection.connectionSQL);
                 commandDealer.Parameters.AddWithValue("Name", name);
@@ -728,8 +729,6 @@ namespace Business_Administrator
 
         ConnectionDB connection = new ConnectionDB();
 
-        
-
         public void insert()
         {
             try
@@ -747,6 +746,33 @@ namespace Business_Administrator
             {
                 MessageBox.Show("ERROR");
                 Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);
+            }
+            finally
+            {
+                connection.closeConnectionDB();
+            }
+        }
+
+        public void update(string lineIDToUpdate)
+        {
+            try
+            {
+                connection.openConnectionDB();
+
+                string commandUpdateLine= "UPDATE LINES " +
+                    "SET [name]=@Name " +
+                    "WHERE [id] = @lineID";
+                SqlCommand commandLine = new SqlCommand(commandUpdateLine, connection.connectionSQL);
+                commandLine.Parameters.AddWithValue("Name", name);
+                commandLine.Parameters.AddWithValue("lineID", lineIDToUpdate);
+                commandLine.ExecuteNonQuery();
+                MessageBox.Show("Row updated successful (LINE)");
+                Console.WriteLine("Row updated successful (LINE)");
+            }
+            catch (SqlException Error)
+            {
+                MessageBox.Show("ERROR");
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from LINES\n" + Error);
             }
             finally
             {
@@ -783,6 +809,33 @@ namespace Business_Administrator
             {
                 MessageBox.Show("ERROR");
                 Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);
+            }
+            finally
+            {
+                connection.closeConnectionDB();
+            }
+        }
+
+        public void update(string brandIDToUpdate)
+        {
+            try
+            {
+                connection.openConnectionDB();
+
+                string commandUpdateBrand = "UPDATE BRANDS " +
+                    "SET [name]=@Name " +
+                    "WHERE [id] = @brandID";
+                SqlCommand commandBrand = new SqlCommand(commandUpdateBrand, connection.connectionSQL);
+                commandBrand.Parameters.AddWithValue("Name", name);
+                commandBrand.Parameters.AddWithValue("brandID", brandIDToUpdate);
+                commandBrand.ExecuteNonQuery();
+                MessageBox.Show("Row updated successful (BRAND)");
+                Console.WriteLine("Row updated successful (BRAND)");
+            }
+            catch (SqlException Error)
+            {
+                MessageBox.Show("ERROR");
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from BRANDS\n" + Error);
             }
             finally
             {

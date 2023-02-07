@@ -18,17 +18,49 @@ namespace Business_Administrator.Forms_Create
         }
 
         ownFunctions Functions = new ownFunctions();
-
+        public bool insertMood = false;
+        public bool updateMood = false;
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (Functions.checkLenghtTexBox(textBoxName,2))
+            Brand BRAND = new Brand(textBoxName.Text);
+            if (Functions.checkLenghtTexBox(textBoxName, 2))
             {
-                Brand brand = new Brand(textBoxName.Text);
-                brand.insert();
-                this.DialogResult = DialogResult.OK;
-                this.Hide();
+                if (insertMood)
+                {
+                    DialogResult messageQuestionInsert = MessageBox.Show("Desea registrar una nueva Marca?", "Registrar Marca Nueva", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (messageQuestionInsert == DialogResult.Yes)
+                    {
+                        DialogResult dialogResultValidation = new DialogResult();
+                        FormUserValidation formUserValidation = new FormUserValidation();
+                        dialogResultValidation = formUserValidation.ShowDialog();
+                        if (dialogResultValidation == DialogResult.OK) BRAND.insert();
+                    }
 
-            } else MessageBox.Show("LLENA EL CAMPO CON MINIMO 2 CARACTERES");
+                }
+                else if (updateMood)
+                {
+                    DialogResult messageQuestionUpdate = MessageBox.Show("Desea actualizar el nombre de la Marca?", "Editar Marca", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (messageQuestionUpdate == DialogResult.Yes)
+                    {
+                        DialogResult dialogResultValidation = new DialogResult();
+                        FormUserValidation formUserValidation = new FormUserValidation();
+                        dialogResultValidation = formUserValidation.ShowDialog();
+                        if (dialogResultValidation == DialogResult.OK) BRAND.update(labelIDBrand.Text);
+                    }
+                }
+                else Console.WriteLine("Both moods are false");
+                this.DialogResult = DialogResult.OK;
+                this.Dispose();
+
+            }
+            else MessageBox.Show("LLENA EL CAMPO CON MINIMO 2 CARACTERES");
+        }
+
+        private void FormCreate_UpdateBrand_Load(object sender, EventArgs e)
+        {
+            if (insertMood) buttonInsert_Update.Text = "REGISTRAR";
+            else if (updateMood) buttonInsert_Update.Text = "ACTUALIZAR";
+            else Console.WriteLine("Error mood Brand");
         }
     }
 }
