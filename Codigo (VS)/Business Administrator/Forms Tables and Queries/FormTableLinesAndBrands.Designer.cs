@@ -29,10 +29,11 @@ namespace Business_Administrator.Forms_Tables_and_Queries
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewLines = new System.Windows.Forms.DataGridView();
             this.dataGridViewBrands = new System.Windows.Forms.DataGridView();
             this.TitleBrands = new System.Windows.Forms.Label();
@@ -50,49 +51,50 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewLines.AllowUserToAddRows = false;
             this.dataGridViewLines.AllowUserToDeleteRows = false;
             this.dataGridViewLines.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
-            this.dataGridViewLines.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
+            this.dataGridViewLines.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewLines.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewLines.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewLines.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.dataGridViewLines.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewLines.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(170)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(182)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewLines.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(170)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(182)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewLines.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewLines.ColumnHeadersHeight = 45;
             this.dataGridViewLines.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewLines.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewLines.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewLines.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewLines.EnableHeadersVisualStyles = false;
             this.dataGridViewLines.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
             this.dataGridViewLines.Location = new System.Drawing.Point(12, 43);
             this.dataGridViewLines.Name = "dataGridViewLines";
             this.dataGridViewLines.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.NullValue = "Vacio";
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewLines.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.NullValue = "Vacio";
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewLines.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewLines.RowHeadersVisible = false;
+            this.dataGridViewLines.RowHeadersWidth = 51;
             this.dataGridViewLines.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewLines.ShowEditingIcon = false;
             this.dataGridViewLines.Size = new System.Drawing.Size(620, 179);
@@ -103,24 +105,32 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewBrands.AllowUserToAddRows = false;
             this.dataGridViewBrands.AllowUserToDeleteRows = false;
             this.dataGridViewBrands.AllowUserToResizeRows = false;
-            this.dataGridViewBrands.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewBrands.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewBrands.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewBrands.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewBrands.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.dataGridViewBrands.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewBrands.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridViewBrands.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewBrands.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewBrands.ColumnHeadersHeight = 45;
             this.dataGridViewBrands.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewBrands.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBrands.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewBrands.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewBrands.EnableHeadersVisualStyles = false;
             this.dataGridViewBrands.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
             this.dataGridViewBrands.Location = new System.Drawing.Point(12, 307);
             this.dataGridViewBrands.Name = "dataGridViewBrands";
             this.dataGridViewBrands.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridViewBrands.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewBrands.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewBrands.RowHeadersVisible = false;
+            this.dataGridViewBrands.RowHeadersWidth = 51;
             this.dataGridViewBrands.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewBrands.ShowEditingIcon = false;
             this.dataGridViewBrands.Size = new System.Drawing.Size(620, 179);
@@ -129,22 +139,22 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             // TitleBrands
             // 
             this.TitleBrands.AutoSize = true;
-            this.TitleBrands.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleBrands.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitleBrands.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.TitleBrands.Location = new System.Drawing.Point(12, 271);
             this.TitleBrands.Name = "TitleBrands";
-            this.TitleBrands.Size = new System.Drawing.Size(112, 33);
+            this.TitleBrands.Size = new System.Drawing.Size(136, 31);
             this.TitleBrands.TabIndex = 1;
             this.TitleBrands.Text = "MARCAS";
             // 
             // TitleLines
             // 
             this.TitleLines.AutoSize = true;
-            this.TitleLines.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleLines.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitleLines.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.TitleLines.Location = new System.Drawing.Point(12, 9);
             this.TitleLines.Name = "TitleLines";
-            this.TitleLines.Size = new System.Drawing.Size(96, 33);
+            this.TitleLines.Size = new System.Drawing.Size(117, 31);
             this.TitleLines.TabIndex = 2;
             this.TitleLines.Text = "LINEAS";
             // 
@@ -162,6 +172,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.buttonLineDelete.TabIndex = 8;
             this.buttonLineDelete.Text = "Eliminar";
             this.buttonLineDelete.UseVisualStyleBackColor = false;
+            this.buttonLineDelete.Click += new System.EventHandler(this.buttonLineDelete_Click);
             // 
             // buttonLineEdit
             // 
@@ -177,6 +188,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.buttonLineEdit.TabIndex = 7;
             this.buttonLineEdit.Text = "Editar";
             this.buttonLineEdit.UseVisualStyleBackColor = false;
+            this.buttonLineEdit.Click += new System.EventHandler(this.buttonLineEdit_Click);
             // 
             // buttonBrandDelete
             // 
@@ -192,6 +204,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.buttonBrandDelete.TabIndex = 10;
             this.buttonBrandDelete.Text = "Eliminar";
             this.buttonBrandDelete.UseVisualStyleBackColor = false;
+            this.buttonBrandDelete.Click += new System.EventHandler(this.buttonBrandDelete_Click);
             // 
             // buttonBrandEdit
             // 
@@ -207,6 +220,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.buttonBrandEdit.TabIndex = 9;
             this.buttonBrandEdit.Text = "Editar";
             this.buttonBrandEdit.UseVisualStyleBackColor = false;
+            this.buttonBrandEdit.Click += new System.EventHandler(this.buttonBrandEdit_Click);
             // 
             // FormTableLinesAndBrands
             // 

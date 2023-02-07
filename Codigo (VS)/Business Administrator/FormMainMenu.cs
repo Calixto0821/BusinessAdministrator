@@ -92,12 +92,16 @@ namespace Business_Administrator
         private void buttonCreateLine_Click(object sender, EventArgs e)
         {
             FormCreate_UpdateLine createLine = new FormCreate_UpdateLine();
+            createLine.insertMood = true;
+            createLine.updateMood = false;
             createLine.Show();
         }
 
         private void buttonCreateBrand_Click(object sender, EventArgs e)
         {
             FormCreate_UpdateBrand createBrand = new FormCreate_UpdateBrand();
+            createBrand.insertMood = true;
+            createBrand.updateMood = false;
             createBrand.Show();
         }
 

@@ -42,24 +42,24 @@
             // 
             this.textBoxUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.textBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxUser.Font = new System.Drawing.Font("Roboto Condensed", 15F);
+            this.textBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.textBoxUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.textBoxUser.Location = new System.Drawing.Point(18, 119);
             this.textBoxUser.MaxLength = 30;
             this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(235, 25);
+            this.textBoxUser.Size = new System.Drawing.Size(235, 29);
             this.textBoxUser.TabIndex = 1;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPassword.Font = new System.Drawing.Font("Roboto Condensed", 15F);
+            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.textBoxPassword.Location = new System.Drawing.Point(18, 183);
             this.textBoxPassword.MaxLength = 50;
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(235, 25);
+            this.textBoxPassword.Size = new System.Drawing.Size(235, 29);
             this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
@@ -68,7 +68,7 @@
             this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonLogin.FlatAppearance.BorderSize = 0;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Roboto Condensed", 15F);
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.buttonLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonLogin.Location = new System.Drawing.Point(18, 230);
             this.buttonLogin.Name = "buttonLogin";
@@ -83,7 +83,7 @@
             this.buttonCreateAdministrator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.buttonCreateAdministrator.FlatAppearance.BorderSize = 0;
             this.buttonCreateAdministrator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateAdministrator.Font = new System.Drawing.Font("Roboto Condensed", 15F);
+            this.buttonCreateAdministrator.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.buttonCreateAdministrator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.buttonCreateAdministrator.Location = new System.Drawing.Point(18, 271);
             this.buttonCreateAdministrator.Name = "buttonCreateAdministrator";
@@ -96,7 +96,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Roboto Condensed", 20.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
             this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
@@ -108,22 +108,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Condensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.label2.Location = new System.Drawing.Point(14, 92);
+            this.label2.Location = new System.Drawing.Point(14, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 24);
+            this.label2.Size = new System.Drawing.Size(107, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "Usuario:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto Condensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.label3.Location = new System.Drawing.Point(14, 156);
+            this.label3.Location = new System.Drawing.Point(14, 152);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
+            this.label3.Size = new System.Drawing.Size(150, 29);
             this.label3.TabIndex = 6;
             this.label3.Text = "Contraseña:";
             // 
@@ -132,7 +132,7 @@
             this.buttonCloseApplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonCloseApplication.FlatAppearance.BorderSize = 0;
             this.buttonCloseApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCloseApplication.Font = new System.Drawing.Font("Roboto Condensed", 8.25F, System.Drawing.FontStyle.Bold);
+            this.buttonCloseApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonCloseApplication.ForeColor = System.Drawing.Color.White;
             this.buttonCloseApplication.Location = new System.Drawing.Point(239, 12);
             this.buttonCloseApplication.Name = "buttonCloseApplication";
@@ -157,7 +157,7 @@
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUser);
-            this.Font = new System.Drawing.Font("Roboto Condensed", 8.25F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

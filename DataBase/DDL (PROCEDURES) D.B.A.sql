@@ -110,10 +110,42 @@ FROM BRANDS AS B
 WHERE B.status = 1
 GO
 
+CREATE PROCEDURE getDataClientBalance @UserID INT
+AS
+SELECT
+U.id AS 'ID USER',
+C.balance AS 'BALANCE',
+C.debt AS 'DEBT'
+FROM CLIENTS AS C
+INNER JOIN USERS AS U ON U.document = C.document_user
+WHERE C.status = 1 AND U.id = @UserID
+GO
+ 
+
+--DELETE
+
 CREATE PROCEDURE deleteClient @Document VARCHAR(15)
 AS
 UPDATE CLIENTS SET status = 0 WHERE document_user = @Document
 GO
+
+
+CREATE PROCEDURE deleteEmployee @Document VARCHAR(15)
+AS
+UPDATE EMPLOYEES SET status = 0 WHERE document_user = @Document
+GO
+
+CREATE PROCEDURE deleteLine @ID INT
+AS
+UPDATE LINES SET status = 0 WHERE id = @ID
+GO
+
+CREATE PROCEDURE deleteBrand @ID INT
+AS
+UPDATE BRANDS status = 0 WHERE id = @ID
+GO
+
+ --DISPLAY DELETE ITEMS
 
 CREATE PROCEDURE displayDataDeletedClients
 AS
@@ -129,11 +161,6 @@ INNER JOIN CLIENTS AS C ON U.document = C.document_user
 WHERE C.status = 0
 GO
 
-CREATE PROCEDURE deleteEmployee @Document VARCHAR(15)
-AS
-UPDATE EMPLOYEES SET status = 0 WHERE document_user = @Document
-GO
-
 CREATE PROCEDURE displayDataDeletedEmployees 
 AS
 SELECT
@@ -146,15 +173,4 @@ U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS as U
 INNER JOIN EMPLOYEES AS E ON U.document = E.document_user
 WHERE E.status = 0
-GO
-
-CREATE PROCEDURE getDataClientBalance @UserID INT
-AS
-SELECT
-U.id AS 'ID USER',
-C.balance AS 'BALANCE',
-C.debt AS 'DEBT'
-FROM CLIENTS AS C
-INNER JOIN USERS AS U ON U.document = C.document_user
-WHERE C.status = 1 AND U.id = @UserID
 GO

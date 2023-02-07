@@ -45,8 +45,8 @@ namespace Business_Administrator
                     textBoxUser.Enabled = true;
                     textBoxPassword.Enabled = true;
                     //Fill fields automatically (Temporary to do tests)
-                    textBoxUser.Text = "Admin";
-                    textBoxPassword.Text = "administrator";
+                    textBoxUser.Text = "ADMIN";
+                    textBoxPassword.Text = "1234";
                 }
                     
             }
