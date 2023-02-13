@@ -735,7 +735,6 @@ namespace Business_Administrator
         }
 
         ConnectionDB connection = new ConnectionDB();
-
         public void insert()
         {
             try
