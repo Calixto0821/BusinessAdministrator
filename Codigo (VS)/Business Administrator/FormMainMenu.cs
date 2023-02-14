@@ -89,6 +89,12 @@ namespace Business_Administrator
             createDealer.Show();
         }
 
+        private void buttonSeeDealers_Click(object sender, EventArgs e)
+        {
+            FormTableDealers formTableDealers = new FormTableDealers();
+            formTableDealers.Show();
+        }
+
         private void buttonCreateLine_Click(object sender, EventArgs e)
         {
             FormCreate_UpdateLine createLine = new FormCreate_UpdateLine();
@@ -138,11 +144,7 @@ namespace Business_Administrator
             formTableClients.Show();
         }
 
-        private void buttonSeeDealers_Click(object sender, EventArgs e)
-        {
-            FormTableDealers formTableDealers = new FormTableDealers();
-            formTableDealers.Show();
-        }
+        
 
         private void buttonSeeProducts_Click(object sender, EventArgs e)
         {

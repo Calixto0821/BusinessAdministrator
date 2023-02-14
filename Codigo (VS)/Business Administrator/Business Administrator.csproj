@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSet %28Functions Database%29.cs" />
+    <Compile Include="Dataset.cs" />
     <Compile Include="DB Business Administrator %28Tables%29.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

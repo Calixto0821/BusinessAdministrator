@@ -25,8 +25,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void dataUpload()
         {
-            string command = "EXEC displayDataClients";
-            connection.displayData(dataGridViewClients, command);
+            connection.displayData(dataGridViewClients, "EXEC displayDataClients");
         }
 
         private void FormTableClients_Load(object sender, EventArgs e)
@@ -86,7 +85,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     FormUserValidation formUserValidation = new FormUserValidation();
                     dialogResultValidation = formUserValidation.ShowDialog();
                     if (dialogResultValidation == DialogResult.OK){
-                        Clients clients = new Clients(documentClient);
+                        Dataset clients = new Dataset(documentClient);
                         clients.delete();
                     }                       
                     dataUpload();

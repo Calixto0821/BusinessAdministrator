@@ -47,7 +47,7 @@ namespace Business_Administrator
             {
                 if (Functions.checkValidEmail(textBoxEmail.Text))
                 {
-                    Clients CLIENT = new Clients(textBoxFirstName.Text, textBoxLastName.Text, textBoxCellphone.Text, textBoxDocument.Text, textBoxEmail.Text, Convert.ToDouble(textBoxBalance.Text), Convert.ToDouble(textBoxDebt.Text));
+                    Dataset CLIENT = new Dataset(textBoxFirstName.Text, textBoxLastName.Text, textBoxCellphone.Text, textBoxDocument.Text, textBoxEmail.Text, Convert.ToDouble(textBoxBalance.Text), Convert.ToDouble(textBoxDebt.Text));
                     if (insertMood)
                     {
                         DialogResult messageQuestionInsert = MessageBox.Show("Desea registrar un nuevo usuario?", "Registrar Usuario Nuevo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

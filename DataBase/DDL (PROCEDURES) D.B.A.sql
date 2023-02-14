@@ -129,10 +129,14 @@ AS
 UPDATE CLIENTS SET status = 0 WHERE document_user = @Document
 GO
 
-
 CREATE PROCEDURE deleteEmployee @Document VARCHAR(15)
 AS
 UPDATE EMPLOYEES SET status = 0 WHERE document_user = @Document
+GO
+
+CREATE PROCEDURE deleteDealer @ID INT
+AS
+UPDATE DEALERS SET status = 0 WHERE id = @ID
 GO
 
 CREATE PROCEDURE deleteLine @ID INT
@@ -142,8 +146,10 @@ GO
 
 CREATE PROCEDURE deleteBrand @ID INT
 AS
-UPDATE BRANDS status = 0 WHERE id = @ID
+UPDATE BRANDS SET status = 0 WHERE id = @ID
 GO
+
+
 
  --DISPLAY DELETE ITEMS
 

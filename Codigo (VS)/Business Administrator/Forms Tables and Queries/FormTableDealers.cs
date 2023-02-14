@@ -21,11 +21,11 @@ namespace Business_Administrator.Forms_Tables_and_Queries
         }
 
         ConnectionDB connection = new ConnectionDB();
+
         
         private void dataUpload()
         {
-            string command = "EXEC displayDataDealers";
-            connection.displayData(dataGridViewDealers, command);
+            connection.displayData(dataGridViewDealers, "EXEC displayDataDealers");
         }
         
         private void FormTableDealers_Load(object sender, EventArgs e)
@@ -70,7 +70,26 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-
+            if (dataGridViewDealers.SelectedRows.Count == 1)
+            {
+                string nameDealer = dataGridViewDealers.CurrentRow.Cells["NAME"].Value.ToString().Trim();
+                int idDealer = Convert.ToInt32(dataGridViewDealers.CurrentRow.Cells["ID"].Value.ToString().Trim());
+                DialogResult warningMessage = MessageBox.Show("Proveedor: "+nameDealer+
+                    "\nID: "+idDealer+
+                    "\nDesea eliminar de forma definitiva?", "Eliminar CLiente",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+                if(warningMessage == DialogResult.Yes)
+                {
+                    DialogResult dialogResultValidation = new DialogResult();
+                    FormUserValidation formUserValidation = new FormUserValidation();
+                    dialogResultValidation = formUserValidation.ShowDialog();
+                    if (dialogResultValidation == DialogResult.OK)
+                    {
+                        Dealer dealer= new Dealer(idDealer);
+                        dealer.delete();
+                    }
+                    dataUpload();
+                }
+            } else MessageBox.Show("Selecciona solamente un registro, por favor");
         }
     }
 }

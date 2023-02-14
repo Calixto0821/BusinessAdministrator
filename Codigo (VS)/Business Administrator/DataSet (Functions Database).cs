@@ -378,18 +378,18 @@ namespace Business_Administrator
         }
     }
 
-    public class Clients
+    public class Dataset
     {
         string first_name, last_name, cellphone_number, document, email;
         double balance, debt;
         int user_type;
 
-        public Clients(string document)
+        public Dataset(string document)
         {
             this.document = document;
         }
 
-        public Clients(string first_name, string last_name, string cellphone_number, string document, string email, double balance, double debt )
+        public Dataset(string first_name, string last_name, string cellphone_number, string document, string email, double balance, double debt )
         {
             this.first_name = first_name;
             this.last_name = last_name;
@@ -492,7 +492,7 @@ namespace Business_Administrator
                 string commandDeleteUser = "EXEC deleteClient @Document = '" + document + "'";
                 SqlCommand command = new SqlCommand(commandDeleteUser,connection.connectionSQL);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Cliente " + this.document + " eliminado");
+                MessageBox.Show("Cliente " + document + " eliminado");
                 Console.WriteLine("Client deleted successfully");
             }
             catch (SqlException Error)
@@ -620,7 +620,7 @@ namespace Business_Administrator
                 string commandDeleteUser = "EXEC deleteEmployee @Document = '"+document+"'";
                 SqlCommand command = new SqlCommand(commandDeleteUser, connection.connectionSQL);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Empleado " + this.document + " eliminado");
+                MessageBox.Show("Empleado " + document + " eliminado");
                 Console.WriteLine("Employee deleted successfully");
             }
             catch (SqlException Error)
@@ -638,8 +638,15 @@ namespace Business_Administrator
 
     public class Dealer
     {
+        int id;
         string name, cellphone, phone, address, web, contact_email;
 
+        public Dealer(int idDealer)
+        {
+            this.id = idDealer;
+        }
+
+        
         public Dealer(string name, string cellphone, string phone, string address, string web, string contact_email)
         {
             this.name = name;
@@ -710,6 +717,28 @@ namespace Business_Administrator
             {
                 MessageBox.Show("ERROR");
                 Console.WriteLine("Error! An error ocurred while the system was trying update a row from DEALERS\n" + Error);
+            }
+            finally
+            {
+                connection.closeConnectionDB();
+            }
+        }
+
+        public void delete()
+        {
+            try
+            {
+                connection.openConnectionDB();
+                string commandDeleteDealer = "EXEC deleteDealer @ID = " + id;
+                SqlCommand command = new SqlCommand(commandDeleteDealer, connection.connectionSQL);
+                command.ExecuteNonQuery();
+                MessageBox.Show("Proveedor " + name + " eliminada");
+                Console.WriteLine("Dealer deleted successfully");
+            }
+            catch (SqlException Error)
+            {
+                MessageBox.Show("ERROR");
+                Console.WriteLine("Error! An error ocurred while the system was trying delete Dealer (" + id + ")\n" + Error);
             }
             finally
             {
@@ -794,7 +823,7 @@ namespace Business_Administrator
                 string commandDeleteLine= "EXEC deleteLine @ID = " + id;
                 SqlCommand command = new SqlCommand(commandDeleteLine, connection.connectionSQL);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Linea " + this.name + " eliminada");
+                MessageBox.Show("Linea " + name + " eliminada");
                 Console.WriteLine("Line deleted successfully");
             }
             catch (SqlException Error)
@@ -886,7 +915,7 @@ namespace Business_Administrator
                 string commandDeleteBrand = "EXEC deleteBrand @ID = " + id;
                 SqlCommand command = new SqlCommand(commandDeleteBrand, connection.connectionSQL);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Marca " + this.name + " eliminada");
+                MessageBox.Show("Marca " + name + " eliminada");
                 Console.WriteLine("Brand deleted successfully");
             }
             catch (SqlException Error)
