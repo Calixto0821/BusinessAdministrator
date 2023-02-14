@@ -85,7 +85,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     FormUserValidation formUserValidation = new FormUserValidation();
                     dialogResultValidation = formUserValidation.ShowDialog();
                     if (dialogResultValidation == DialogResult.OK){
-                        Dataset clients = new Dataset(documentClient);
+                        Client clients = new Client(documentClient);
                         clients.delete();
                     }                       
                     dataUpload();

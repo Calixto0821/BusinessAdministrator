@@ -66,10 +66,11 @@ namespace Business_Administrator
         /// <param name="order"></param>
         public void fillComboBox(ComboBox comboBox, string table, string column, string order = "id")
         {
+            comboBox.Items.Clear();
             try
             {
                 connectionSQL.Open();
-                SqlCommand commandQuery = new SqlCommand("SELECT * FROM "+table+" ORDER BY "+order, connectionSQL);
+                SqlCommand commandQuery = new SqlCommand("SELECT * FROM "+table+" WHERE STATUS = 1 ORDER BY "+order, connectionSQL);
                 SqlDataReader sqlDR = commandQuery.ExecuteReader();
 
                 while (sqlDR.Read())
@@ -95,11 +96,12 @@ namespace Business_Administrator
         /// <param name="order"></param>
         public void fillComboBoxAccordingToParameter(ComboBox comboBox, string table, string column, string parameterColumn, string parameter, string order = "id")
         {
+            comboBox.Items.Clear();
             int indexComboBox = 0;
             try
             {
                 connectionSQL.Open();
-                SqlCommand commandQuery = new SqlCommand("SELECT * FROM " + table + " ORDER BY " + order, connectionSQL);
+                SqlCommand commandQuery = new SqlCommand("SELECT * FROM " + table + " WHERE STATUS = 1 ORDER BY " + order, connectionSQL);
                 commandQuery.Parameters.AddWithValue("Parameter", parameter);
                 SqlDataReader sqlDR = commandQuery.ExecuteReader();
 
@@ -378,18 +380,18 @@ namespace Business_Administrator
         }
     }
 
-    public class Dataset
+    public class Client
     {
         string first_name, last_name, cellphone_number, document, email;
         double balance, debt;
         int user_type;
 
-        public Dataset(string document)
+        public Client(string document)
         {
             this.document = document;
         }
 
-        public Dataset(string first_name, string last_name, string cellphone_number, string document, string email, double balance, double debt )
+        public Client(string first_name, string last_name, string cellphone_number, string document, string email, double balance, double debt )
         {
             this.first_name = first_name;
             this.last_name = last_name;
@@ -935,9 +937,14 @@ namespace Business_Administrator
         string reference, name, barcode, description;
         double price;
         int stock, minimum_stock;
-        int id_dealer, id_brand, id_line;
+        int id, id_dealer, id_brand, id_line;
 
         ConnectionDB connection = new ConnectionDB();
+
+        public Product(int productID)
+        {
+            this.id = productID;    
+        }
 
         public Product(string reference, string name, string barcode,double price,int id_dealer,int id_brand,int  id_line,
             int stock = 0, int minimum_stock = 0, string description = "")
@@ -1024,6 +1031,28 @@ namespace Business_Administrator
             }
         }
 
+
+        public void delete()
+        {
+            try
+            {
+                connection.openConnectionDB();
+                string commandDeleteProduct = "EXEC deleteProduct @ID = " + id;
+                SqlCommand command = new SqlCommand(commandDeleteProduct, connection.connectionSQL);
+                command.ExecuteNonQuery();
+                MessageBox.Show("Producto " + name + " eliminado");
+                Console.WriteLine("Product deleted successfully");
+            }
+            catch (SqlException Error)
+            {
+                MessageBox.Show("ERROR");
+                Console.WriteLine("Error! An error ocurred while the system was trying delete product (" + id + ")\n" + Error);
+            }
+            finally
+            {
+                connection.closeConnectionDB();
+            }
+        }
 
     }
 

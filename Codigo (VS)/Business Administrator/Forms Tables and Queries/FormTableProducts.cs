@@ -25,8 +25,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void dataUpload()
         {
-            string command = "EXEC displayDataProducts";
-            connection.displayData(dataGridViewProducts, command);
+            connection.displayData(dataGridViewProducts, "EXEC displayDataProducts");
         }
 
         private void FormTableProducts_Load(object sender, EventArgs e)
@@ -36,7 +35,26 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-
+            if (dataGridViewProducts.SelectedRows.Count == 1)
+            {
+                string nameProduct = dataGridViewProducts.CurrentRow.Cells["NAME"].Value.ToString().Trim();
+                int productID = Convert.ToInt32(dataGridViewProducts.CurrentRow.Cells["ID"].Value.ToString().Trim());
+                DialogResult warningMessage = MessageBox.Show("Producto: " + nameProduct +
+                    "\nID: " + productID +
+                    "\nDesea eliminar de forma definitiva?", "Eliminar Producto", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (warningMessage == DialogResult.Yes)
+                {
+                    DialogResult dialogResultValidation = new DialogResult();
+                    FormUserValidation formUserValidation = new FormUserValidation();
+                    dialogResultValidation = formUserValidation.ShowDialog();
+                    if (dialogResultValidation == DialogResult.OK)
+                    {
+                        Product product= new Product(productID);
+                        product.delete();
+                    }
+                    dataUpload();
+                }
+            } else MessageBox.Show("Selecciona solamente un registro, por favor");
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)

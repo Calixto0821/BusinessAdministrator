@@ -120,6 +120,12 @@ namespace Business_Administrator
             createProduct.Show(); ;
         }
 
+        private void buttonSeeProducts_Click(object sender, EventArgs e)
+        {
+            FormTableProducts formTableProducts = new FormTableProducts();
+            formTableProducts.Show();
+        }
+
         private void buttonCreateService_Click(object sender, EventArgs e)
         {
             FormCreate_UpdateService createService = new FormCreate_UpdateService();
@@ -146,11 +152,7 @@ namespace Business_Administrator
 
         
 
-        private void buttonSeeProducts_Click(object sender, EventArgs e)
-        {
-            FormTableProducts formTableProducts = new FormTableProducts();
-            formTableProducts.Show();
-        }
+        
 
         private void buttonSeeServices_Click(object sender, EventArgs e)
         {
