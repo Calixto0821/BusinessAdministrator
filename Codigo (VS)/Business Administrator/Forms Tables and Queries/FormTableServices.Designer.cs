@@ -75,7 +75,8 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.dataGridViewServices.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewServices.EnableHeadersVisualStyles = false;
             this.dataGridViewServices.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(246)))), ((int)(((byte)(118)))));
-            this.dataGridViewServices.Location = new System.Drawing.Point(12, 45);
+            this.dataGridViewServices.Location = new System.Drawing.Point(16, 55);
+            this.dataGridViewServices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewServices.Name = "dataGridViewServices";
             this.dataGridViewServices.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -88,19 +89,21 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewServices.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewServices.RowHeadersVisible = false;
+            this.dataGridViewServices.RowHeadersWidth = 51;
             this.dataGridViewServices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewServices.ShowEditingIcon = false;
-            this.dataGridViewServices.Size = new System.Drawing.Size(776, 426);
+            this.dataGridViewServices.Size = new System.Drawing.Size(1035, 524);
             this.dataGridViewServices.TabIndex = 2;
             // 
             // Title
             // 
             this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Roboto Condensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
-            this.Title.Location = new System.Drawing.Point(12, 9);
+            this.Title.Location = new System.Drawing.Point(16, 11);
+            this.Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(134, 33);
+            this.Title.Size = new System.Drawing.Size(214, 39);
             this.Title.TabIndex = 6;
             this.Title.Text = "SERVICIOS";
             // 
@@ -112,12 +115,14 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(403, 477);
+            this.buttonDelete.Location = new System.Drawing.Point(537, 587);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(385, 34);
+            this.buttonDelete.Size = new System.Drawing.Size(513, 42);
             this.buttonDelete.TabIndex = 10;
             this.buttonDelete.Text = "Eliminar";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonEdit
             // 
@@ -127,9 +132,10 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonEdit.ForeColor = System.Drawing.Color.White;
-            this.buttonEdit.Location = new System.Drawing.Point(12, 477);
+            this.buttonEdit.Location = new System.Drawing.Point(16, 587);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(385, 34);
+            this.buttonEdit.Size = new System.Drawing.Size(513, 42);
             this.buttonEdit.TabIndex = 9;
             this.buttonEdit.Text = "Editar";
             this.buttonEdit.UseVisualStyleBackColor = false;
@@ -137,15 +143,16 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             // 
             // FormTableServices
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(800, 526);
+            this.ClientSize = new System.Drawing.Size(1067, 647);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.dataGridViewServices);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormTableServices";

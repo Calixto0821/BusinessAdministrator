@@ -149,13 +149,16 @@ AS
 UPDATE BRANDS SET status = 0 WHERE id = @ID
 GO
 
-
 CREATE PROCEDURE deleteProduct @ID INT
 AS
 UPDATE PRODUCTS SET status = 0 WHERE id = @ID
 GO
 
 
+CREATE PROCEDURE deleteService @ID INT
+AS
+UPDATE SERVICES SET status = 0 WHERE id = @ID
+GO
 
  --DISPLAY DELETE ITEMS
 
@@ -185,4 +188,4 @@ U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS as U
 INNER JOIN EMPLOYEES AS E ON U.document = E.document_user
 WHERE E.status = 0
-GO
+GOs

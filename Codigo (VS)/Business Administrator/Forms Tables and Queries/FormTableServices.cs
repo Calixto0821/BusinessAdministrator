@@ -66,5 +66,30 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             }
             else MessageBox.Show("Selecciona solamente un registro, por favor");
         }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewServices.SelectedRows.Count == 1)
+            {
+                string nameService= dataGridViewServices.CurrentRow.Cells["NAME"].Value.ToString().Trim();
+                int serviceID = Convert.ToInt32(dataGridViewServices.CurrentRow.Cells["ID"].Value.ToString().Trim());
+                DialogResult warningMessage = MessageBox.Show("Servicio: " + nameService +
+                    "\nID: " + serviceID +
+                    "\nDesea eliminar de forma definitiva?", "Eliminar Servicio", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (warningMessage == DialogResult.Yes)
+                {
+                    DialogResult dialogResultValidation = new DialogResult();
+                    FormUserValidation formUserValidation = new FormUserValidation();
+                    dialogResultValidation = formUserValidation.ShowDialog();
+                    if (dialogResultValidation == DialogResult.OK)
+                    {
+                        Service service = new Service(serviceID);
+                        service.delete();
+                    }
+                    dataUpload();
+                }
+            }
+            else MessageBox.Show("Selecciona solamente un registro, por favor");
+        }
     }
 }

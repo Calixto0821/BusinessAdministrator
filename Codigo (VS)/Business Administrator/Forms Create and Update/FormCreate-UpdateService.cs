@@ -29,6 +29,13 @@ namespace Business_Administrator.Forms_Create
         private void validateNumbers_KeyPress(object sender, KeyPressEventArgs Num) => validate.onlyNumbers(Num);
         #endregion
 
+        private void FormCreate_UpdateService_Load(object sender, EventArgs e)
+        {
+            if (insertMood) buttonInsert_Update.Text = "REGRISTRAR";
+            else if (updateMood) buttonInsert_Update.Text = "ACTUALIZAR";
+            else Console.WriteLine("Error mood Service");
+        }
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             TextBox[] fieldsForm = { textBoxReference, textBoxName, textBoxBarcode, textBoxPrice};
@@ -79,11 +86,6 @@ namespace Business_Administrator.Forms_Create
             else MessageBox.Show("Completa todos los campos por favor");
         }
 
-        private void FormCreate_UpdateService_Load(object sender, EventArgs e)
-        {
-            if (insertMood) labelTitle.Text = "REGRISTRAR SERVICIO";
-            else if (updateMood) labelTitle.Text = "ACTUALIZAR SERVICIO";
-            else Console.WriteLine("Error mood Service");
-        }
+        
     }
 }

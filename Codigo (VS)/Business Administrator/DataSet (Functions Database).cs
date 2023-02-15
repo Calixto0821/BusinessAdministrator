@@ -1060,6 +1060,12 @@ namespace Business_Administrator
     {
         string reference, name, barcode, description;
         double price;
+        int id;
+
+        public Service(int serviceID)
+        {
+            this.id = serviceID;
+        }
 
         public Service(string reference , string name, string barcode, double price, string description = "None")
         {
@@ -1107,17 +1113,17 @@ namespace Business_Administrator
             {
                 connection.openConnectionDB();
 
-                string commandUpdateDealer = "UPDATE SERVICES " +
+                string commandUpdateService = "UPDATE SERVICES " +
                     "SET [name] = @Name,[reference] = @Reference,[barcode] = @Barcode,[price] = @Price,[description] = @Description " +
                     "WHERE [id] = @serviceID";
-                SqlCommand commandDealer = new SqlCommand(commandUpdateDealer, connection.connectionSQL);
-                commandDealer.Parameters.AddWithValue("Name", name);
-                commandDealer.Parameters.AddWithValue("Reference", reference);
-                commandDealer.Parameters.AddWithValue("Barcode", barcode);
-                commandDealer.Parameters.AddWithValue("Price", price);
-                commandDealer.Parameters.AddWithValue("Description", description);;
-                commandDealer.Parameters.AddWithValue("serviceID", serviceIDToUpdate);
-                commandDealer.ExecuteNonQuery();
+                SqlCommand commandService = new SqlCommand(commandUpdateService, connection.connectionSQL);
+                commandService.Parameters.AddWithValue("Name", name);
+                commandService.Parameters.AddWithValue("Reference", reference);
+                commandService.Parameters.AddWithValue("Barcode", barcode);
+                commandService.Parameters.AddWithValue("Price", price);
+                commandService.Parameters.AddWithValue("Description", description);;
+                commandService.Parameters.AddWithValue("serviceID", serviceIDToUpdate);
+                commandService.ExecuteNonQuery();
                 MessageBox.Show("Row updated successful (SERVICE)");
                 Console.WriteLine("Row updated successful (SERVICE)");
             }
@@ -1125,6 +1131,28 @@ namespace Business_Administrator
             {
                 MessageBox.Show("ERROR");
                 Console.WriteLine("Error! An error ocurred while the system was trying update a row from SERVICES\n" + Error);
+            }
+            finally
+            {
+                connection.closeConnectionDB();
+            }
+        }
+
+        public void delete()
+        {
+            try
+            {
+                connection.openConnectionDB();
+                string commandDeleteService = "EXEC deleteService @ID = " + id;
+                SqlCommand command = new SqlCommand(commandDeleteService, connection.connectionSQL);
+                command.ExecuteNonQuery();
+                MessageBox.Show("Servicio " + name + " eliminado");
+                Console.WriteLine("Service deleted successfully");
+            }
+            catch (SqlException Error)
+            {
+                MessageBox.Show("ERROR");
+                Console.WriteLine("Error! An error ocurred while the system was trying delete service (" + id + ")\n" + Error);
             }
             finally
             {

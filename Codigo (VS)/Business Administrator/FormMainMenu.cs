@@ -117,7 +117,7 @@ namespace Business_Administrator
             createProduct.insertMood = true;
             createProduct.updateMood = false;
             createProduct.buttonInsert_Update.Text = "Agregar";
-            createProduct.Show(); ;
+            createProduct.Show();
         }
 
         private void buttonSeeProducts_Click(object sender, EventArgs e)
@@ -129,6 +129,8 @@ namespace Business_Administrator
         private void buttonCreateService_Click(object sender, EventArgs e)
         {
             FormCreate_UpdateService createService = new FormCreate_UpdateService();
+            createService.insertMood = true;
+            createService.updateMood = false;
             createService.Show();
         }
 
