@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 
 using System.Data.SqlClient;
+using static System.Collections.Specialized.BitVector32;
+
 namespace Business_Administrator.Forms_Tables_and_Queries
 {
     public partial class FormTableClients : Form
@@ -20,7 +22,6 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             connection.tryConnection(this);
         }
 
-
         ConnectionDB connection = new ConnectionDB();
 
         private void dataUpload()
@@ -30,6 +31,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void FormTableClients_Load(object sender, EventArgs e)
         {
+            dataGridViewClients.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
             dataUpload();
         }
 
@@ -87,7 +89,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     if (dialogResultValidation == DialogResult.OK){
                         Client clients = new Client(documentClient);
                         clients.delete();
-                    }                       
+                    }
                     dataUpload();
                 }             
             }

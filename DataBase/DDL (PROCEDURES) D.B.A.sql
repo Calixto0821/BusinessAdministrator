@@ -92,6 +92,7 @@ FROM PRODUCTS AS P
 WHERE P.status = 1
 GO
 
+
 CREATE PROCEDURE displayDataLines
 AS
 SELECT
@@ -188,4 +189,4 @@ U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS as U
 INNER JOIN EMPLOYEES AS E ON U.document = E.document_user
 WHERE E.status = 0
-GOs
+GO

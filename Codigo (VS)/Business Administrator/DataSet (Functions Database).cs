@@ -23,7 +23,7 @@ namespace Business_Administrator
         public void openConnectionDB()
         {
             try{connectionSQL.Open();}
-            catch (SqlException Error){Console.WriteLine("Error! Could not open connection with the database\n"+Error.Message);}            
+            catch (SqlException Error){Console.WriteLine("Error! Could not open connection with the database\nERROR MESSAGE:\n"+Error.Message);}            
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Business_Administrator
         public void closeConnectionDB()
         {
             try{connectionSQL.Close();}
-            catch (SqlException Error){Console.WriteLine("Error! Could not close connection with the database\n" + Error.Message);}
+            catch (SqlException Error){Console.WriteLine("Error! Could not close connection with the database\nERROR MESSAGE:\n" + Error.Message);}
         }
 
 
@@ -45,13 +45,13 @@ namespace Business_Administrator
             try
             {
                 openConnectionDB();
-                Console.WriteLine("CONNECTION SUCCESSFUL " + "Form(" + form.Name + ")");
+                Console.WriteLine("CONNECTION SUCCESSFUL [Form " + form.Name + "]");
                 closeConnectionDB();
             }
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR\nAn error was ocurred while the system was trying connect with the database");
-                Console.WriteLine("ERROR\nAn error was ocurred while the system was trying connect with the database" + Convert.ToString(Error));
+                Console.WriteLine("ERROR\nAn error was ocurred while the system was trying connect with the database\nERROR MESSAGE:\n" + Error.Message);
             }
 
         }
@@ -158,7 +158,7 @@ namespace Business_Administrator
             }
             catch (Exception Error)
             {
-                Console.WriteLine(Error.ToString());
+                Console.WriteLine("\nERROR MESSAGE:\n" + Error.ToString());
                 MessageBox.Show("ERROR/n" + Error.Message);
                 return 0;
             }
@@ -437,7 +437,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row from USERS and CLIENTS\n" + Error);                
+                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row from USERS and CLIENTS\nERROR MESSAGE:\n" + Error.Message);                
             }
             finally
             {
@@ -478,7 +478,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying update a row from USERS and CLIENTS\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from USERS and CLIENTS\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -500,7 +500,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying delete client ("+document+")\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying delete client ("+document+")\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -564,7 +564,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);       
+                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row from USERS and EMPLOYEES\nERROR MESSAGE:\n" + Error.Message);       
             }
             finally
             {
@@ -606,7 +606,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying update a row from USERS and EMPLOYEES\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from USERS and EMPLOYEES\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -628,7 +628,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying delete employee (" + document + ")\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying delete employee ("+ document +")\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -684,7 +684,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row from DEALRES\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -718,7 +718,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying update a row from DEALERS\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from DEALERS\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -740,7 +740,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying delete Dealer (" + id + ")\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying delete Dealer ("+ id +")\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -782,7 +782,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row from LINES\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -809,7 +809,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying update a row from LINES\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from LINES\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -831,7 +831,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying delete line (" + id + ")\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying delete line (" + id + ")\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -874,7 +874,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row from BRANDS\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -901,7 +901,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying update a row from BRANDS\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from BRANDS\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -923,7 +923,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying delete brand (" + id + ")\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying delete brand (" + id + ")\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -986,7 +986,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row from PRODUCTS\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -1023,7 +1023,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying update a row from PRODUCTS\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from PRODUCTS\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -1046,7 +1046,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying delete product (" + id + ")\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying delete product (" + id + ")\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -1099,7 +1099,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying insert a new row from SERVICES\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -1130,7 +1130,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying update a row from SERVICES\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying update a row from SERVICES\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
@@ -1152,7 +1152,7 @@ namespace Business_Administrator
             catch (SqlException Error)
             {
                 MessageBox.Show("ERROR");
-                Console.WriteLine("Error! An error ocurred while the system was trying delete service (" + id + ")\n" + Error);
+                Console.WriteLine("Error! An error ocurred while the system was trying delete service (" + id + ")\nERROR MESSAGE:\n" + Error.Message);
             }
             finally
             {
