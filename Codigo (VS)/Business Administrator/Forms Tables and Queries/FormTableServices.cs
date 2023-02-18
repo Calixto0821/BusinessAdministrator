@@ -24,8 +24,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void dataUpload()
         {
-            string command = "EXEC displayDataServices";
-            connection.displayData(dataGridViewServices, command);
+            connection.displayData(dataGridViewServices, "EXEC displayDataServices");
         }
 
         private void FormTableServices_Load(object sender, EventArgs e)

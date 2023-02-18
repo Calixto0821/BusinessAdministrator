@@ -21,15 +21,19 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         ConnectionDB connection = new ConnectionDB();
 
-        private void dataUpload(DataGridView dataGridShow,string command)
+        private void dataUploadLine()
         {
-            connection.displayData(dataGridShow, command);
+            connection.displayData(dataGridViewLines, "EXEC displayDataLines");
+        }
+        private void dataUploadBrand()
+        {
+            connection.displayData(dataGridViewBrands, "EXEC displayDataBrands");
         }
 
         private void FormTableLinesAndBrands_Load(object sender, EventArgs e)
         {
-            connection.displayData(dataGridViewLines, "EXEC displayDataLines");
-            connection.displayData(dataGridViewBrands, "EXEC displayDataBrands");
+            dataUploadLine();
+            dataUploadBrand();
         }
 
         private void buttonLineEdit_Click(object sender, EventArgs e)
@@ -49,7 +53,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     FormLine.updateMood = true;
                     FormLine.insertMood = false;
                     FormLine.ShowDialog();
-                    dataUpload(dataGridViewLines,"EXEC displayDataLines");
+                    dataUploadLine();
                 }
                 catch(Exception Error)
                 {
@@ -77,7 +81,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     FormBrand.updateMood = true;
                     FormBrand.insertMood = false;
                     FormBrand.ShowDialog();
-                    dataUpload(dataGridViewBrands,"EXEC displayDataBrands");
+                    dataUploadBrand();
                 }
                 catch (Exception Error)
                 {
@@ -108,7 +112,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                         Line line = new Line(idLine);
                         line.delete();
                     }
-                    dataUpload(dataGridViewLines, "EXEC displayDataLines");
+                    dataUploadLine();
                 }
             }
             else MessageBox.Show("Selecciona solamente un registro, por favor");
@@ -133,7 +137,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                         Brand brand = new Brand(idBrand);
                         brand.delete();
                     }
-                    dataUpload(dataGridViewBrands, "EXEC displayDataBrands");
+                    dataUploadBrand();
                 }
             }
             else MessageBox.Show("Selecciona solamente un registro, por favor");

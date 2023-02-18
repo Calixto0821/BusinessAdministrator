@@ -20,12 +20,11 @@ namespace Business_Administrator.Forms_Tables_and_Queries
             connection.tryConnection(this);
         }
 
-
         ConnectionDB connection = new ConnectionDB();
 
         private void dataUpload()
         {
-            connection.displayData(dataGridViewClients, "EXEC displayDataClients");
+            connection.displayData(dataGridViewClients, "EXEC displayDataDealers");
         }
 
         private void FormTableClients_Load(object sender, EventArgs e)
@@ -87,7 +86,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     if (dialogResultValidation == DialogResult.OK){
                         Client clients = new Client(documentClient);
                         clients.delete();
-                    }                       
+                    }
                     dataUpload();
                 }             
             }
