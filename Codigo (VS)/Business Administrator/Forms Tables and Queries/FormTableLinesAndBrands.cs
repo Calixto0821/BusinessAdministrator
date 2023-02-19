@@ -38,7 +38,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void buttonLineEdit_Click(object sender, EventArgs e)
         {
-            FormCreate_UpdateLine FormLine = new FormCreate_UpdateLine();
+            FormCreate_UpdateLine_Brand FormLine = new FormCreate_UpdateLine_Brand();
             if(dataGridViewLines.SelectedRows.Count == 1)
             {
                 try
@@ -47,11 +47,13 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     string[] parametersQueryLine = { "*", "LINES", "id=" + idLine + "AND status=1" };
                     DataTable dataTableLines = connection.querySelect(parametersQueryLine);
                     FormLine.textBoxName.Text = dataTableLines.Rows[0]["name"].ToString().Trim();
-                    FormLine.labelIDLine.Text = dataTableLines.Rows[0]["id"].ToString().Trim();
+                    FormLine.labelID.Text = dataTableLines.Rows[0]["id"].ToString().Trim();
                     Console.WriteLine("Assignment successfully completed");
 
                     FormLine.updateMood = true;
                     FormLine.insertMood = false;
+                    FormLine.lines = true;
+                    FormLine.brands = false;
                     FormLine.ShowDialog();
                     dataUploadLine();
                 }
@@ -66,7 +68,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void buttonBrandEdit_Click(object sender, EventArgs e)
         {
-            FormCreate_UpdateBrand FormBrand = new FormCreate_UpdateBrand();
+            FormCreate_UpdateLine_Brand FormBrand = new FormCreate_UpdateLine_Brand();
             if (dataGridViewLines.SelectedRows.Count == 1)
             {
                 try
@@ -75,11 +77,13 @@ namespace Business_Administrator.Forms_Tables_and_Queries
                     string[] parametersQueryBrand = { "*", "BRANDS", "id=" + idBrand + "AND status=1" };
                     DataTable dataTableBrand = connection.querySelect(parametersQueryBrand);
                     FormBrand.textBoxName.Text = dataTableBrand.Rows[0]["name"].ToString().Trim();
-                    FormBrand.labelIDBrand.Text = dataTableBrand.Rows[0]["id"].ToString().Trim();
+                    FormBrand.labelID.Text = dataTableBrand.Rows[0]["id"].ToString().Trim();
                     Console.WriteLine("Assignment successfully completed");
 
                     FormBrand.updateMood = true;
                     FormBrand.insertMood = false;
+                    FormBrand.brands = true;
+                    FormBrand.lines = false;
                     FormBrand.ShowDialog();
                     dataUploadBrand();
                 }

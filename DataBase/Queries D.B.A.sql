@@ -56,3 +56,6 @@ SELECT * FROM DETAILS_PRODUCT_SALES
 SELECT * FROM DETAILS_SERVICE_SALES
 
 --DROP
+
+--OTHERS
+SELECT IDENT_CURRENT('LINES') as 'LAST' --Returns the last identity value generated for the table

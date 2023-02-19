@@ -88,17 +88,11 @@
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms Create and Update\FormCreate-UpdateBrand.cs">
+    <Compile Include="Forms Create and Update\FormCreate-UpdateLine_Brand.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms Create and Update\FormCreate-UpdateBrand.Designer.cs">
-      <DependentUpon>FormCreate-UpdateBrand.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms Create and Update\FormCreate-UpdateLine.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms Create and Update\FormCreate-UpdateLine.Designer.cs">
-      <DependentUpon>FormCreate-UpdateLine.cs</DependentUpon>
+    <Compile Include="Forms Create and Update\FormCreate-UpdateLine_Brand.Designer.cs">
+      <DependentUpon>FormCreate-UpdateLine_Brand.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms Create and Update\FormCreate-UpdateProduct.cs">
       <SubType>Form</SubType>
@@ -176,11 +170,8 @@
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateBrand.resx">
-      <DependentUpon>FormCreate-UpdateBrand.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateLine.resx">
-      <DependentUpon>FormCreate-UpdateLine.cs</DependentUpon>
+    <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateLine_Brand.resx">
+      <DependentUpon>FormCreate-UpdateLine_Brand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms Create and Update\FormCreate-UpdateProduct.resx">
       <DependentUpon>FormCreate-UpdateProduct.cs</DependentUpon>

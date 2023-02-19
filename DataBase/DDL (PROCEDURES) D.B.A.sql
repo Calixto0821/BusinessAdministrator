@@ -120,8 +120,7 @@ C.debt AS 'DEBT'
 FROM CLIENTS AS C
 INNER JOIN USERS AS U ON U.document = C.document_user
 WHERE C.status = 1 AND U.id = @UserID
-GO
- 
+GO 
 
 --DELETE
 
@@ -161,7 +160,7 @@ AS
 UPDATE SERVICES SET status = 0 WHERE id = @ID
 GO
 
- --DISPLAY DELETE ITEMS
+--DISPLAY DELETE ITEMS
 
 CREATE PROCEDURE displayDataDeletedClients
 AS
@@ -189,4 +188,15 @@ U.cellphone_number AS 'CELLPHONE NUMBER'
 FROM USERS as U
 INNER JOIN EMPLOYEES AS E ON U.document = E.document_user
 WHERE E.status = 0
+GO
+
+--QUERIES
+CREATE PROCEDURE searchLastIDLines
+AS
+SELECT IDENT_CURRENT('LINES') as 'LAST'
+GO
+
+CREATE PROCEDURE searchLastIDBrands
+AS
+SELECT IDENT_CURRENT('BRANDS') as 'LAST'
 GO
