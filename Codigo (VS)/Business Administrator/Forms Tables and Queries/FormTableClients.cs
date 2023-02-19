@@ -26,7 +26,7 @@ namespace Business_Administrator.Forms_Tables_and_Queries
 
         private void dataUpload()
         {
-            connection.displayData(dataGridViewClients, "EXEC displayDataClients");
+            connection.displayData(dataGridViewClients, "EXEC displayDataDealers");
         }
 
         private void FormTableClients_Load(object sender, EventArgs e)
